@@ -1,0 +1,22 @@
+{
+  "name": "scite4autoit-themes",
+  "displayName": "Scite4AutoIt-Themes",
+  "description": "Add themes similar to those available in Scite4AutoIt.",
+  "version": "0.0.1",
+  "publisher": "donnyh13",
+  "engines": {
+    "vscode": "^1.54.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Scite4AutoIt_Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Scite4AutoIt_Dark.json"
+      }
+    ]
+  }
+}
