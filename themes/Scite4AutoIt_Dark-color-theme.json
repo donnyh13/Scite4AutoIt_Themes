@@ -1,28 +1,26 @@
 {
 	"name": "Scite4AutoIt_Dark",
+	"type": "dark",
 	"colors": {
 		"editor.background": "#202020", // Scite Style 32 Back
-		// "editor.background": "#1E1E1E",
 		"editor.foreground": "#D0D0D0", // Scite Style 32 Fore
-		// "editor.foreground": "#D4D4D4",
-		"editor.selectionBackground": "#f9f9f950", // Scite Selection Back (Highlight)
-		// "editor.inactiveSelectionBackground": "#3A3D41",
+		"editor.selectionBackground": "#f9f9f950", // Scite Selection Back (Highlight) + Alpha
 		"editor.selectionForeground": "#C2FFAE", // Scite Selection Fore (Text)
-		// "editor.selectionHighlightBackground": "#ADD6FF26",
-		"editor.wordHighlightBackground": "#C2FFAE50", // Scite Highlight Current Word, with added 50 Transparency
+		"editor.wordHighlightBackground": "#C2FFAE50", // Scite Selection (highlight.current.word) (Highlight Similar to Current Word), with added 50 Transparency
+		"editor.selectionHighlightBackground": "#C2FFAE50", // Scite Selection (highlight.current.word) (Highlight Similar Word), with added 50 Transparency
 		"editor.lineHighlightBackground": "#333333", // Scite Caret Line Back
 		"editorCursor.foreground": "#FFFFFF", // Scite Caret Fore
 		"editorGutter.background": "#202020", // Scite Style 33 Back
-		"editorLineNumber.foreground": "#afafaf", // Customized dimmed Style 33?
+		"editorLineNumber.foreground": "#afafaf", // Customized dimmed Style 33 Fore?
 		"editorLineNumber.activeForeground": "#DADADA", // Scite Style 33 Fore
 		"editorIndentGuide.background": "#DADADA", // Scite Style 37 Fore
-		// "editorIndentGuide.background": "#404040",
-		// "editorIndentGuide.activeBackground": "#3f3f3f",
 		// "editorBracketHighlight.foreground1": "#00F0F0", // Scite Style 34 Fore
 		// "editorBracketHighlight.unexpectedBracket.foreground": "#00FF80", // Scite Style 35 Fore
 		"editorHoverWidget.background": "#202020", // Scite Style 38 Back (Call Tips)
 		"editorHoverWidget.foreground": "#DADADA", // Scite Style 38 Fore (Call Tips)
 		"editorHoverWidget.highlightForeground": "#e7db74", // Scite Style Calltips Color Highlight (Call Tips)
+		"editor.inactiveSelectionBackground": "#3A3D41",
+		"editorIndentGuide.activeBackground": "#707070",
 		"list.dropBackground": "#383B3D",
 		"activityBarBadge.background": "#007ACC",
 		"sideBarTitle.foreground": "#BBBBBB",
@@ -51,16 +49,25 @@
 				}
 			},
 			{
-				"name": "Comments",
+				"name": "Line Comments",
 				"scope": [
 					"comment",
 					"comment.line.semicolon.autoit", // Logan
-					"comment.block.autoit", // Logan
 					"comment.line.au3", // Genius
+				],
+				"settings": {
+					"foreground": "#60A060", // Scite Style 1
+					"fontStyle": "italic"
+				}
+			},
+			{
+				"name": "Block Comments",
+				"scope": [
+					"comment.block.autoit", // Logan
 					"comment.block.au3" // Genius
 				],
 				"settings": {
-					"foreground": "#60A060", // Scite Style 1 & 2
+					"foreground": "#60A060", // Scite Style  2
 					"fontStyle": "italic"
 				}
 			},
@@ -83,7 +90,10 @@
 			},
 			{
 				"name": "Functions - BuiltIn",
-				"scope": "support.function.autoit", // Logan
+				"scope": [
+					"support.function.autoit", // Logan
+					"support.function.au3" // Genius ? Proposed
+				],
 				"settings": {
 					"foreground": "#8080FF" // Scite Style 4
 				}
@@ -94,47 +104,63 @@
 					"constant.language",
 					"constant.language.autoit", // Logan
 					"keyword.operator.logical.autoit", // Logan
-					"keyword.control.au3" // Genius
-				],
-				"settings": {
-					"foreground": "#C080C0" // Scite Style 5
-				}
-			},
-			{
-				"name": "Keyword: Func, Const, Enum",
-				"scope": [
+					"keyword.control.au3", // Genius
+					// Keyword: Func, Const, Enum
 					"storage.type",
 					"storage.type.autoit", // Logan
 					"storage.type.function.au3", // Genius
-					"storage.type.enum.au3" // Genius
-				],
-				"settings": {
-					"foreground": "#C080C0" // Scite Style 5
-				}
-			},
-			{
-				"name": "Keyword: Variable Scope etc",
-				"scope": [
+					"storage.type.enum.au3", // Genius
+					// Keyword: Variable Scope etc
 					"storage.modifier",
 					"keyword.operator.noexcept",
 					"storage.modifier.autoit", // Logan
-					"storage.modifier.au3" // Genius
-				],
-				"settings": {
-					"foreground": "#C080C0" // Scite Style 5
-				}
-			},
-			{
-				"name": "Keyword: Conditional Statements etc.",
-				"scope": [
+					"storage.modifier.au3", // Genius
+					// Keyword: Conditional Statements etc.
 					"keyword.control",
 					"keyword.control.autoit", // Logan
-					"keyword.control.au3" //Genius
+					"keyword.control.au3", //Genius
+					// Combining
+					"storage"
 				],
 				"settings": {
 					"foreground": "#C080C0" // Scite Style 5
 				}
 			},
+			// {
+			// 	"name": "Keyword: Func, Const, Enum",
+			// 	"scope": [
+			// 		"storage.type",
+			// 		"storage.type.autoit", // Logan
+			// 		"storage.type.function.au3", // Genius
+			// 		"storage.type.enum.au3" // Genius
+			// 	],
+			// 	"settings": {
+			// 		"foreground": "#C080C0" // Scite Style 5
+			// 	}
+			// },
+			// {
+			// 	"name": "Keyword: Variable Scope etc",
+			// 	"scope": [
+			// 		"storage.modifier",
+			// 		"keyword.operator.noexcept",
+			// 		"storage.modifier.autoit", // Logan
+			// 		"storage.modifier.au3" // Genius
+			// 	],
+			// 	"settings": {
+			// 		"foreground": "#C080C0" // Scite Style 5
+			// 	}
+			// },
+			// {
+			// 	"name": "Keyword: Conditional Statements etc.",
+			// 	"scope": [
+			// 		"keyword.control",
+			// 		"keyword.control.autoit", // Logan
+			// 		"keyword.control.au3" //Genius
+			// 	],
+			// 	"settings": {
+			// 		"foreground": "#C080C0" // Scite Style 5
+			// 	}
+			// },
 			{
 				"name": "AutoIt Macros",
 				"scope": [
@@ -154,7 +180,10 @@
 					"string.quoted.double.au3", // Genius
 					"string.quoted.pragma.value.au3", // Genius
 					"string.other.include.au3", // Genius
-					"meta.embedded.assembly"
+					"meta.embedded.assembly",
+					// Combining
+					"meta.embedded",
+					"source.groovy.embedded"
 				],
 				"settings": {
 					"foreground": "#F0E090" // Scite Style 7
@@ -168,7 +197,9 @@
 					"keyword.operator.comparison.autoit", // Logan
 					"punctuation.bracket.autoit", // Logan
 					"punctuation.commadot.autoit", // Logan
-					"keyword.operator.au3" // Genius
+					"keyword.operator.au3", // Genius
+					// Combining
+					"keyword.operator"
 				],
 				"settings": {
 					"foreground": "#FF8000" // Scite Style 8
@@ -216,7 +247,10 @@
 				"scope": [
 					"meta.preprocessor.autoit", // Logan
 					"meta.preprocessor.au3", // Genius
-					"keyword.control.pragma.au3" // Genius
+					"keyword.control.pragma.au3", // Genius
+					// Combining
+					"meta.preprocessor",
+					"entity.name.function.preprocessor"
 				 ],
 				"settings": {
 					"foreground": "#FFAAB7" // Scite Style 12
@@ -291,13 +325,13 @@
 					"foreground": "#f44747"
 				}
 			},
-			{
-				"name": "Storage",
-				"scope": "storage",
-				"settings": {
-					"foreground": "#569cd6"
-				}
-			},
+			// {
+			// 	"name": "Storage",
+			// 	"scope": "storage",
+			// 	"settings": {
+			// 		"foreground": "#569cd6"
+			// 	}
+			// },
 			{
 				"name": "Keyword",
 				"scope": "keyword",
@@ -305,12 +339,12 @@
 					"foreground": "#569cd6"
 				}
 			},
-			{
-				"scope": "keyword.operator",
-				"settings": {
-					"foreground": "#d4d4d4"
-				}
-			},
+			// {
+			// 	"scope": "keyword.operator",
+			// 	"settings": {
+			// 		"foreground": "#d4d4d4"
+			// 	}
+			// },
 			{
 				"scope": [
 					"keyword.operator.new",
@@ -334,15 +368,15 @@
 					"foreground": "#b5cea8"
 				}
 			},
-			{
-				"scope": [
-					"meta.embedded",
-					"source.groovy.embedded"
-				],
-				"settings": {
-					"foreground": "#D4D4D4"
-				}
-			},
+			// {
+			// 	"scope": [
+			// 		"meta.embedded",
+			// 		"source.groovy.embedded"
+			// 	],
+			// 	"settings": {
+			// 		"foreground": "#D4D4D4"
+			// 	}
+			// },
 			{
 				"scope": "emphasis",
 				"settings": {
@@ -475,15 +509,15 @@
 					"foreground": "#808080"
 				}
 			},
-			{
-				"scope": [
-					"meta.preprocessor",
-					"entity.name.function.preprocessor"
-				],
-				"settings": {
-					"foreground": "#569cd6"
-				}
-			},
+			// {
+			// 	"scope": [
+			// 		"meta.preprocessor",
+			// 		"entity.name.function.preprocessor"
+			// 	],
+			// 	"settings": {
+			// 		"foreground": "#569cd6"
+			// 	}
+			// },
 			{
 				"scope": "meta.preprocessor.string",
 				"settings": {
@@ -817,5 +851,4 @@
 // 		}
 // 	]
 // },
-
 // }

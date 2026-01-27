@@ -1,0 +1,640 @@
+{
+	"name": "Scite4AutoIt_Monokai",
+	"type":"dark",
+	"colors": {
+		"editor.background": "#272822", // Scite Style 32 Back
+		"editor.foreground": "#D0D0D0", //? Scite Style 32 Fore -- no Fore value, adding one.
+		"editor.selectionBackground": "#cf6b4c65", // Scite Selection Fore (Highlight) + Alpha -- Increased to 65 Alpha from 25
+		// "editor.selectionBackground": "#27282225", // Scite Selection Back (Highlight) + Alpha
+		// "editor.selectionForeground": "#CF6A4C", // Scite Selection Fore (Text)
+		"editor.wordHighlightBackground": "#00D04050", //? Scite Selection (highlight.current.word from Scite Global defaults) (Highlight Similar to Current Word), with added 50 Transparency
+		"editor.selectionHighlightBackground": "#00D04050", //? Scite Selection (highlight.current.word from Scite Global defaults) (Highlight Similar Word), with added 50 Transparency
+		"editor.lineHighlightBackground": "#FFFF0005", // Scite Caret Line Back + Alpha
+		// "editorCursor.foreground": "#000000", // ?? Scite Caret Fore
+		"editorGutter.background": "#C0C0C0", //? Scite Style 33 Back from Scite Global defaults
+		"editorLineNumber.foreground": "#444444", //? Customized dimmed Style 33 Fore? -- Not set, but using for readability.
+		"editorLineNumber.activeForeground": "#000000", //? Scite Style 33 Fore -- Not set, but using for readability.
+		"editorIndentGuide.background": "#C0C0C0", // ?? Scite Style 37 Fore 
+		// "editorBracketHighlight.foreground1": "#0000FF", // Scite Style 34 Fore
+		// "editorBracketHighlight.unexpectedBracket.foreground": "#009933", // Scite Style 35 Fore
+		"editorHoverWidget.background": "#414339", //? Scite Style 38 Back (Call Tips) -- Not set, so Adding custom values.
+		"editorHoverWidget.foreground": "#F8f8f2", //? Scite Style 38 Fore (Call Tips) -- Not set, so Adding custom values.
+		"editorHoverWidget.highlightForeground": "#C4265E", //? Scite Style Calltips Color Highlight (Call Tips) -- Not set, so Adding custom values.
+		"editorIndentGuide.activeBackground": "#707070",
+        "dropdown.background":"#414339",
+		"list.activeSelectionBackground":"#75715E",
+		"quickInputList.focusBackground":"#414339",
+		"dropdown.listBackground":"#1e1f1c",
+		"list.inactiveSelectionBackground":"#414339",
+		"list.hoverBackground":"#3e3d32",
+		"list.dropBackground":"#414339",
+		"list.highlightForeground":"#f8f8f2",
+		"button.background":"#75715E",
+		"selection.background":"#878b9180",
+		"minimap.selectionHighlight":"#878b9180",
+		"editor.wordHighlightStrongBackground":"#6a6a9680",
+		"editorWhitespace.foreground":"#464741",
+		"editorGroupHeader.tabsBackground":"#1e1f1c",
+		"editorGroup.dropBackground":"#41433980",
+		"tab.inactiveBackground":"#34352f",
+		"tab.border":"#1e1f1c",
+		"tab.inactiveForeground":"#ccccc7",
+		"tab.lastPinnedBorder":"#414339",
+		"widget.shadow":"#00000098",
+		"progressBar.background":"#75715E",
+		"badge.background":"#75715E",
+		"badge.foreground":"#f8f8f2",
+		"panelTitle.activeForeground":"#f8f8f2",
+		"panelTitle.activeBorder":"#75715E",
+		"panelTitle.inactiveForeground":"#75715E",
+		"panel.border":"#414339",
+		"settings.focusedRowBackground":"#4143395A",
+		"titleBar.activeBackground":"#1e1f1c",
+		"statusBar.background":"#414339",
+		"statusBar.noFolderBackground":"#414339",
+		"statusBar.debuggingBackground":"#75715E",
+		"statusBarItem.remoteBackground":"#AC6218",
+		"ports.iconRunningProcessForeground":"#ccccc7",
+		"activityBar.background":"#272822",
+		"activityBar.foreground":"#f8f8f2",
+		"sideBar.background":"#1e1f1c",
+		"sideBarSectionHeader.background":"#272822",
+		"menu.background":"#1e1f1c",
+		"menu.foreground":"#cccccc",
+		"pickerGroup.foreground":"#75715E",
+		"input.background":"#414339",
+		"inputOption.activeBorder":"#75715E",
+		"focusBorder":"#75715E",
+		"editorWidget.background":"#1e1f1c",
+		"debugToolBar.background":"#1e1f1c",
+		"diffEditor.insertedTextBackground":"#4b661680",
+		"diffEditor.removedTextBackground":"#90274A70",
+		"inputValidation.errorBackground":"#90274A",
+		"inputValidation.errorBorder":"#f92672",
+		"inputValidation.warningBackground":"#848528",
+		"inputValidation.warningBorder":"#e2e22e",
+		"inputValidation.infoBackground":"#546190",
+		"inputValidation.infoBorder":"#819aff",
+		"editorHoverWidget.border":"#75715E",
+		"editorSuggestWidget.background":"#272822",
+		"editorSuggestWidget.border":"#75715E",
+		"editorGroup.border":"#34352f",
+		"peekView.border":"#75715E",
+		"peekViewEditor.background":"#272822",
+		"peekViewResult.background":"#1e1f1c",
+		"peekViewTitle.background":"#1e1f1c",
+		"peekViewResult.selectionBackground":"#414339",
+		"peekViewResult.matchHighlightBackground":"#75715E",
+		"peekViewEditor.matchHighlightBackground":"#75715E",
+		"terminal.ansiBlack":"#333333",
+		"terminal.ansiRed":"#C4265E",
+		"terminal.ansiGreen":"#86B42B",
+		"terminal.ansiYellow":"#B3B42B",
+		"terminal.ansiBlue":"#6A7EC8",
+		"terminal.ansiMagenta":"#8C6BC8",
+		"terminal.ansiCyan":"#56ADBC",
+		"terminal.ansiWhite":"#e3e3dd",
+		"terminal.ansiBrightBlack":"#666666",
+		"terminal.ansiBrightRed":"#f92672",
+		"terminal.ansiBrightGreen":"#A6E22E",
+		"terminal.ansiBrightYellow":"#e2e22e",
+		"terminal.ansiBrightBlue":"#819aff",
+		"terminal.ansiBrightMagenta":"#AE81FF",
+		"terminal.ansiBrightCyan":"#66D9EF",
+		"terminal.ansiBrightWhite":"#f8f8f2"
+	},
+	"tokenColors": [
+        {
+            "name": "White Space / Preprocessor directives",
+            "scope": [
+                "string.parameter.directives.autoit", // Logan
+                "support.function.pragma.au3", // Genius
+                "keyword.control.pragma.key.au3", // Genius
+                "string.unquoted.pragma.value.au3" // Genius
+            ],
+            "settings": {
+                "foreground": "#F8F8F2" // Scite Style 0
+            }
+        },
+        {
+            "name": "Line Comments",
+            "scope": [
+                "comment",
+                "comment.line.semicolon.autoit", // Logan
+                "comment.line.au3", // Genius
+            ],
+            "settings": {
+                "foreground": "#755E71", // Scite Style 1
+            }
+        },
+        {
+            "name": "Block Comments",
+            "scope": [
+                "comment.block.autoit", // Logan
+                "comment.block.au3" // Genius
+            ],
+            "settings": {
+                "foreground": "#755E71", // Scite Style  2
+            }
+        },
+        {
+            "name": "Numbers",
+            "scope": [
+                "constant.numeric",
+                "variable.other.enummember",
+                "keyword.operator.plus.exponent",
+                "keyword.operator.minus.exponent",
+                "constant.numeric.autoit", // Logan
+                "constant.numeric.scientific_notation.au3", // Genius
+                "constant.numeric.hex.au3", // Genius
+                "constant.numeric.double.au3", // Genius
+                "constant.numeric.integer.au3" // Genius
+            ],
+            "settings": {
+                "foreground": "#AE81FF" // Scite Style 3
+            }
+        },
+        {
+            "name": "Functions - BuiltIn",
+            "scope": [
+                "support.function.autoit", // Logan
+                "support.function.au3", // Genius ? Proposed
+				// Combining
+				"support.function"
+            ],
+            "settings": {
+                "foreground": "#DAD085" // Scite Style 4
+            }
+        },
+        {
+            "name": "Keyword: True/False, Null/Default, And/Or/Not",
+            "scope": [
+                "constant.language",
+                "constant.language.autoit", // Logan
+                "keyword.operator.logical.autoit", // Logan
+                "keyword.control.au3", // Genius
+                // Keyword: Func, Const, Enum
+                "storage.type",
+                "storage.type.autoit", // Logan
+                "storage.type.function.au3", // Genius
+                "storage.type.enum.au3", // Genius
+                // Keyword: Variable Scope etc
+                "storage.modifier",
+                "keyword.operator.noexcept",
+                "storage.modifier.autoit", // Logan
+                "storage.modifier.au3", // Genius
+                // Keyword: Conditional Statements etc.
+                "keyword.control",
+                "keyword.control.autoit", // Logan
+                "keyword.control.au3", //Genius
+                // Combining
+                "storage",
+				"keyword"
+            ],
+            "settings": {
+                "foreground": "#66D9EF" // Scite Style 5
+            }
+        },
+        {
+            "name": "AutoIt Macros",
+            "scope": [
+                "constant.other.autoit", // Logan
+                "variable.other.constant.au3", // Genius
+                // Combining
+                "constant.character", 
+                "constant.other"
+            ],
+            "settings": {
+                "foreground": "#8996A8" // Scite Style 6
+            }
+        },
+        {
+            "name": "Includes and Strings",
+            "scope": [
+                "string",
+                "string.parameter.import.autoit", // Logan
+                "string.quoted.double.autoit", // Logan
+                "string.quoted.double.au3", // Genius
+                "string.quoted.pragma.value.au3", // Genius
+                "string.other.include.au3", // Genius
+                "meta.embedded.assembly",
+                // Combining
+                "meta.embedded",
+                "source.groovy.embedded"
+            ],
+            "settings": {
+                "foreground": "#E6DB74" // Scite Style 7
+            }
+        },
+        {
+            "name": "Operator: Brackets, Punctuation, Assignment, Math",
+            "scope": [
+                "keyword.operator.assignment.autoit", // Logan
+                "keyword.operator.arithmetic.autoit", // Logan
+                "keyword.operator.comparison.autoit", // Logan
+                "punctuation.bracket.autoit", // Logan
+                "punctuation.commadot.autoit", // Logan
+                "keyword.operator.au3", // Genius
+                // Combining
+                "keyword.operator"
+            ],
+            "settings": {
+                "foreground": "#F92672" // Scite Style 8
+            }
+        },
+        {
+            // "name": "this.self",
+            "name": "User Variables",
+            "scope": [
+                "variable.language", 
+                "variable.other.autoit", // Logan
+                "variable.other.au3", // Genius
+				// Combining
+				"variable"
+            ],
+            "settings": {
+                "foreground": "#F8F8F2" // Scite Style 9
+            }
+        },
+        {
+            "name": "Send Keys",
+            "scope": [
+                "constant.other.send-key.autoit" // Logan
+            ],
+            "settings": {
+                "foreground": "#8996A8" // Scite Style 10
+            }
+        },
+        {
+            "name": "Pre-Processors",
+            "scope": [
+                "keyword.control.import.autoit", // Logan
+                "keyword.control.directives.autoit", // Logan
+                "keyword.control.pragma.au3", // Genius
+                "keyword.control.notrayicon.au3", // Genius
+                "keyword.control.requireadmin.au3", // Genius
+                "keyword.control.includeonce.au3", // Genius
+                "keyword.control.onautoitstartregister.au3", // Genius
+                "keyword.control.include.au3" // Genius
+             ],
+            "settings": {
+                "foreground": "#8996A8" // Scite Style 11
+            }
+        },
+        {
+            "name": "Special -- AU3 Wrapper/Stripper etc",
+            "scope": [
+                "meta.preprocessor.autoit", // Logan
+                "meta.preprocessor.au3", // Genius
+                "keyword.control.pragma.au3", // Genius
+                // Combining
+                "meta.preprocessor",
+                "entity.name.function.preprocessor"
+             ],
+            "settings": {
+                "foreground": "#DADADA" // Scite Style 12
+            }
+        },
+        {
+            "name": "COM Objects",
+            "scope": [ 
+                "support.class.com.autoit", // Logan
+                "support.type.property-name", // Genius
+				// Combining
+				"support.type", 
+				"support.class"
+        ],
+            "settings": {
+                "foreground": "#FD971F" // Scite Style 14
+            }
+        },
+        {
+            "name": "Functions - Standard UDF's",
+            "scope": "support.function.other.autoit", // Logan
+            "settings": {
+                "foreground": "#FD971F" // Scite Style 15
+            }
+        },
+        {
+            "name": "Functions - File/User UDF's",
+            "scope": [
+                "entity.name.function.autoit", // Logan
+                "entity.name.function.au3" // Genius
+            ],
+            "settings": {
+                "foreground": "#FD831F", // Scite Style 17
+                "fontStyle": "underline"
+            }
+        },
+        // These don't work ??
+        // {
+        // 	"name": "Errors Start with >",
+        // 	"scope": "vscode-autoit-output-SCE_ERR_CMD", // Logan
+        // 	"settings": {
+        // 		"foreground": "#0000FF" // Scite Style Errorlist 4
+        // 	}
+        // },
+        // {
+        // 	"name": "Errors Start with !",
+        // 	"scope": "vscode-autoit-output-SCE_ERR_DIFF_CHANGED", // Logan
+        // 	"settings": {
+        // 		"foreground": "#FF0000", // Scite Style Errorlist 10
+        // 		"fontStyle": "bold"
+        // 	}
+        // },
+        // {
+        // 	"name": "Errors Start with +",
+        // 	"scope": "vscode-autoit-output-SCE_ERR_DIFF_ADDITION", // Logan
+        // 	"settings": {
+        // 		"foreground": "#008000", // Scite Style Errorlist 11
+        // 		"fontStyle": "bold"
+        // 	}
+        // },
+        // {
+        // 	"name": "Errors Start with - or <",
+        // 	"scope": "vscode-autoit-output-SCE_ERR_DIFF_DELETION", // Logan
+        // 	"settings": {
+        // 		"foreground": "#FFC90E", // Scite Style Errorlist 12
+        // 		"fontStyle": "bold"
+        // 	}
+        // },
+        {
+			"settings":{
+			"foreground":"#F8F8F2"}
+		},
+		{
+			"name":"Template Definition",
+			"scope":[
+				"punctuation.definition.template-expression",
+				"punctuation.section.embedded"
+				],
+			"settings":{
+				"foreground":"#F92672"
+			}
+		},
+		{
+			"name":"Reset JavaScript string interpolation expression",
+			"scope":["meta.template.expression"],
+			"settings":{
+				"foreground":"#F8F8F2"
+			}
+		},
+		{
+			"name":"Class name",
+			"scope":"entity.name.type, entity.name.class, entity.name.namespace, entity.name.scope-resolution",
+			"settings":{
+				"fontStyle":"underline",
+				"foreground":"#A6E22E"
+			}
+		},
+		{
+			"name":"Inherited class",
+			"scope":"entity.other.inherited-class",
+			"settings":{
+				"fontStyle":"italic underline",
+				"foreground":"#A6E22E"
+			}
+		},
+		{
+			"name":"Function name",
+			"scope":"entity.name.function",
+			"settings":{
+				"fontStyle":"",
+				"foreground":"#A6E22E"
+			}
+		},
+		{
+			"name":"Function argument",
+			"scope":"variable.parameter",
+			"settings":{
+				"fontStyle":"italic",
+				"foreground":"#FD971F"
+			}
+		},
+		{
+			"name":"Tag name",
+			"scope":"entity.name.tag",
+			"settings":{
+				"fontStyle":"",
+				"foreground":"#F92672"
+			}
+		},
+		{
+			"name":"Tag attribute",
+			"scope":"entity.other.attribute-name",
+			"settings":{
+				"fontStyle":"",
+				"foreground":"#A6E22E"
+			}
+		},
+		{
+			"name":"Library constant",
+			"scope":"support.constant",
+			"settings":{
+				"fontStyle":"",
+				"foreground":"#66D9EF"
+			}
+		},
+		{
+			"name":"Library variable",
+			"scope":"support.other.variable",
+			"settings":{
+				"fontStyle":""
+			}
+		},
+		{
+			"name":"Invalid",
+			"scope":"invalid",
+			"settings":{
+				"fontStyle":"",
+				"foreground":"#F44747"
+			}
+		},
+		{
+			"name":"Invalid deprecated",
+			"scope":"invalid.deprecated",
+			"settings":{
+				"foreground":"#F44747"
+			}
+		},
+		{
+			"name":"JSON String",
+			"scope":"meta.structure.dictionary.json string.quoted.double.json",
+			"settings":{
+				"foreground":"#CFCFC2"
+			}
+		},
+		{
+			"name":"diff.header",
+			"scope":"meta.diff, meta.diff.header",
+			"settings":{
+				"foreground":"#75715E"
+			}
+		},
+		{
+			"name":"diff.deleted",
+			"scope":"markup.deleted",
+			"settings":{
+				"foreground":"#F92672"
+			}
+		},
+		{
+			"name":"diff.inserted",
+			"scope":"markup.inserted",
+			"settings":{
+				"foreground":"#A6E22E"
+			}
+		},
+		{
+			"name":"diff.changed",
+			"scope":"markup.changed",
+			"settings":{
+				"foreground":"#E6DB74"
+			}
+		},
+		{
+			"scope":"constant.numeric.line-number.find-in-files - match",
+			"settings":{
+				"foreground":"#AE81FFA0"
+			}
+		},
+		{
+			"scope":"entity.name.filename.find-in-files",
+			"settings":{
+				"foreground":"#E6DB74"
+			}
+		},
+		{
+			"name":"Markup Quote",
+			"scope":"markup.quote",
+			"settings":{
+				"foreground":"#F92672"
+			}
+		},
+		{
+			"name":"Markup Lists",
+			"scope":"markup.list",
+			"settings":{
+				"foreground":"#E6DB74"
+			}
+		},
+		{
+			"name":"Markup Styling",
+			"scope":"markup.bold, markup.italic",
+			"settings":{
+				"foreground":"#66D9EF"
+			}
+		},
+		{
+			"name":"Markup Inline",
+			"scope":"markup.inline.raw",
+			"settings":{
+				"fontStyle":"",
+				"foreground":"#FD971F"
+			}
+		},
+		{
+			"name":"Markup Headings",
+			"scope":"markup.heading",
+			"settings":{
+				"foreground":"#A6E22E"
+			}
+		},
+		{
+			"name":"Markup Setext Header",
+			"scope":"markup.heading.setext",
+			"settings":{
+				"foreground":"#A6E22E",
+				"fontStyle":"bold"
+			}
+		},
+		{
+			"name":"Markup Headings",
+			"scope":"markup.heading.markdown",
+			"settings":{
+				"fontStyle":"bold"
+			}
+		},
+		{
+			"name":"Markdown Quote",
+			"scope":"markup.quote.markdown",
+			"settings":{
+				"fontStyle":"italic",
+				"foreground":"#75715E"
+			}
+		},
+		{
+			"name":"Markdown Bold",
+			"scope":"markup.bold.markdown",
+			"settings":{
+				"fontStyle":"bold"
+			}
+		},
+		{
+			"name":"Markdown Link Title/Description",
+			"scope":"string.other.link.title.markdown,string.other.link.description.markdown",
+			"settings":{
+				"foreground":"#AE81FF"
+			}
+		},
+		{
+			"name":"Markdown Underline Link/Image",
+			"scope":"markup.underline.link.markdown,markup.underline.link.image.markdown",
+			"settings":{
+				"foreground":"#E6DB74"
+			}
+		},
+		{
+			"name":"Markdown Emphasis",
+			"scope":"markup.italic.markdown",
+			"settings":{
+				"fontStyle":"italic"
+			}
+		},
+		{
+			"scope":"markup.strikethrough",
+			"settings":{
+				"fontStyle":"strikethrough"
+			}
+		},
+		{
+			"name":"Markdown Punctuation Definition Link",
+			"scope":"markup.list.unnumbered.markdown, markup.list.numbered.markdown",
+			"settings":{
+				"foreground":"#f8f8f2"
+			}
+		},
+		{
+			"name":"Markdown List Punctuation",
+			"scope":["punctuation.definition.list.begin.markdown"],
+			"settings":{
+				"foreground":"#A6E22E"
+			}
+		},
+		{
+			"scope":"token.info-token",
+			"settings":{
+				"foreground":"#6796e6"
+			}
+		},
+		{
+			"scope":"token.warn-token",
+			"settings":{
+				"foreground":"#cd9731"
+			}
+		},
+		{
+			"scope":"token.error-token",
+			"settings":{
+				"foreground":"#f44747"
+			}
+		},
+		{
+			"scope":"token.debug-token",
+			"settings":{
+				"foreground":"#b267e6"
+			}
+		}
+	],
+	"semanticHighlighting":true
+}
