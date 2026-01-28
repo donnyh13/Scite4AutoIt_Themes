@@ -14,7 +14,7 @@
 		"editorGutter.background": "#C0C0C0", //? Scite Style 33 Back from Scite Global defaults
 		"editorLineNumber.foreground": "#444444", //? Customized dimmed Style 33 Fore? -- Not set, but using for readability.
 		"editorLineNumber.activeForeground": "#000000", //? Scite Style 33 Fore -- Not set, but using for readability.
-		"editorIndentGuide.background": "#C0C0C0", // ?? Scite Style 37 Fore 
+		"editorIndentGuide.background": "#C0C0C0", //? Scite Style 37 Fore from Scite Global defaults
 		// "editorBracketHighlight.foreground1": "#0000FF", // Scite Style 34 Fore
 		// "editorBracketHighlight.unexpectedBracket.foreground": "#009933", // Scite Style 35 Fore
 		"editorHoverWidget.background": "#414339", //? Scite Style 38 Back (Call Tips) -- Not set, so Adding custom values.
@@ -322,7 +322,7 @@
                 "entity.name.function.au3" // Genius
             ],
             "settings": {
-                "foreground": "#FD831F", // Scite Style 17
+                "foreground": "#FD831F", //? Scite Style 17 -- Added for cleaner look.
                 "fontStyle": "underline"
             }
         },

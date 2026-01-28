@@ -1,24 +1,24 @@
 {
-	"name": "Scite4AutoIt_MSDEV",
+	"name": "Scite4AutoIt_Old_LCD",
 	"type": "light",
 	"colors": {
 		"editor.background": "#F0F4F9", // Scite Style 32 Back
 		"editor.foreground": "#202020", //? Scite Style 32 Fore -- no Fore value, adding one.
-		"editor.selectionBackground": "#F0A0A850", //? Scite Selection Back (Highlight) + Alpha from Scite Global defaults
-		"editor.selectionForeground": "#006000", //? Scite Selection Fore (Text) from Scite Global defaults
-		"editor.wordHighlightBackground": "#00D04050", //? Scite Selection (highlight.current.word from Scite Global defaults) (Highlight Similar to Current Word), with added 50 Transparency
-		"editor.selectionHighlightBackground": "#00D04050", //? Scite Selection (highlight.current.word from Scite Global defaults) (Highlight Similar Word), with added 50 Transparency
-		"editor.lineHighlightBackground": "#FFFED8", // Scite Caret Line Back
+		"editor.selectionBackground": "#9488C8", // Scite Selection Back (Highlight) + Alpha
+		"editor.selectionForeground": "#E6E4FA", // Scite Selection Fore (Text)
+		"editor.wordHighlightBackground": "#DE9EAA50", // Scite Selection (highlight.current.word) (Highlight Similar to Current Word), with added 50 Transparency
+		"editor.selectionHighlightBackground": "#DE9EAA50", // Scite Selection (highlight.current.word) (Highlight Similar Word), with added 50 Transparency
+		"editor.lineHighlightBackground": "#FDF268", // Scite Caret Line Back
 		// "editorCursor.foreground": "#000000", // Scite Caret Fore
-		"editorGutter.background": "#C0C0C0", //? Scite Style 33 Back from Scite Global defaults
-		"editorLineNumber.foreground": "#444444", //? Customized dimmed Style 33 Fore? -- Not set, but using for readability.
-		"editorLineNumber.activeForeground": "#000000", //? Scite Style 33 Fore -- Not set, but using for readability.
-		"editorIndentGuide.background": "#C0C0C0", //? Scite Style 37 Fore from Scite Global defaults
+		"editorGutter.background": "#A0E0F0", // Scite Style 33 Back
+		"editorLineNumber.foreground": "#4b4b4b", // Customized dimmed Style 33 Fore?
+		"editorLineNumber.activeForeground": "#000000", // Scite Style 33 Fore
+		"editorIndentGuide.background": "#00AAFF", // Scite Style 37 Fore
 		// "editorBracketHighlight.foreground1": "#0000FF", // Scite Style 34 Fore
-		// "editorBracketHighlight.unexpectedBracket.foreground": "#009933", // Scite Style 35 Fore
-		"editorHoverWidget.background": "#FFFFFF", //? Scite Style 38 Back (Call Tips) -- Not set, so Adding custom values.
-		"editorHoverWidget.foreground": "#050505", //? Scite Style 38 Fore (Call Tips) -- Not set, so Adding custom values.
-		"editorHoverWidget.highlightForeground": "#FF0000", //? Scite Style Calltips Color Highlight (Call Tips) -- Not set, so Adding custom values.
+		// "editorBracketHighlight.unexpectedBracket.foreground": "#008000", // Scite Style 35 Fore
+		"editorHoverWidget.background": "#85E9FE", // Scite Style 38 Back (Call Tips)
+		"editorHoverWidget.foreground": "#050505", // Scite Style 38 Fore (Call Tips)
+		"editorHoverWidget.highlightForeground": "#FF0000", // Scite Style Calltips Color Highlight (Call Tips)
 		"editor.inactiveSelectionBackground": "#E5EBF1",
 		"editorIndentGuide.activeBackground": "#939393",
 		"editorSuggestWidget.background": "#F3F3F3",
@@ -62,7 +62,8 @@
 					"comment.line.au3", // Genius
 				],
 				"settings": {
-					"foreground": "#009933" // Scite Style 1 
+					"foreground": "#008000", // Scite Style 1 
+					"fontStyle": "italic bold"
 				}
 			},
 			{
@@ -72,8 +73,8 @@
 					"comment.block.au3" // Genius
 				],
 				"settings": {
-					"foreground": "#669900", // Scite Style 2
-					"fontStyle": "italic"
+					"foreground": "#008000", // Scite Style 2
+					"fontStyle": "italic bold"
 				}
 			},
 			{
@@ -90,15 +91,16 @@
 					"constant.numeric.integer.au3" // Genius
 				],
 				"settings": {
-					"foreground": "#004040" // Scite Style 3
+					"foreground": "#0000FF", // Scite Style 3
+					"fontStyle": "bold"
 				}
 			},
 			{
 				"name": "Functions - BuiltIn",
 				"scope": "support.function.autoit", // Logan
 				"settings": {
-					"foreground": "#000080", // Scite Style 4
-					"fontStyle": "italic"
+					"foreground": "#000090", // Scite Style 4
+					"fontStyle": "bold"
 				}
 			},
 			{
@@ -126,44 +128,10 @@
 					"storage"
 				],
 				"settings": {
-					"foreground": "#0000FF" // Scite Style 5
+					"foreground": "#0000FF", // Scite Style 5
+					"fontStyle": "bold"
 				}
 			},
-			// {
-			// 	"name": "Keyword: Func, Const, Enum",
-			// 	"scope": [
-			// 		"storage.type",
-			// 		"storage.type.autoit", // Logan
-			// 		"storage.type.function.au3", // Genius
-			// 		"storage.type.enum.au3" // Genius
-			// 	],
-			// 	"settings": {
-			// 		"foreground": "#C080C0" // Scite Style 5
-			// 	}
-			// },
-			// {
-			// 	"name": "Keyword: Variable Scope etc",
-			// 	"scope": [
-			// 		"storage.modifier",
-			// 		"keyword.operator.noexcept",
-			// 		"storage.modifier.autoit", // Logan
-			// 		"storage.modifier.au3" // Genius
-			// 	],
-			// 	"settings": {
-			// 		"foreground": "#C080C0" // Scite Style 5
-			// 	}
-			// },
-			// {
-			// 	"name": "Keyword: Conditional Statements etc.",
-			// 	"scope": [
-			// 		"keyword.control",
-			// 		"keyword.control.autoit", // Logan
-			// 		"keyword.control.au3" //Genius
-			// 	],
-			// 	"settings": {
-			// 		"foreground": "#C080C0" // Scite Style 5
-			// 	}
-			// },
 			{
 				"name": "AutoIt Macros",
 				"scope": [
@@ -171,7 +139,8 @@
 					"variable.other.constant.au3" // Genius
 				],
 				"settings": {
-					"foreground": "#800000" // Scite Style 6
+					"foreground": "#808000", // Scite Style 6
+					"fontStyle": "bold"
 				}
 			},
 			{
@@ -189,7 +158,8 @@
 					"source.groovy.embedded"
 				],
 				"settings": {
-					"foreground": "#008080" // Scite Style 7
+					"foreground": "#FF0000", // Scite Style 7
+					"fontStyle": "bold"
 				}
 			},
 			{
@@ -205,7 +175,8 @@
 					"keyword.operator"
 				],
 				"settings": {
-					"foreground": "#000000" // Scite Style 8
+					"foreground": "#FF8000", // Scite Style 8
+					"fontStyle": "bold"
 				}
 			},
 			{
@@ -217,7 +188,8 @@
 					"variable.other.au3" // Genius
 				],
 				"settings": {
-					"foreground": "#5A5A5A" // Scite Style 9
+					"foreground": "#5A5A5A", // Scite Style 9
+					"fontStyle": "bold"
 				}
 			},
 			{
@@ -226,7 +198,8 @@
 					"constant.other.send-key.autoit" // Logan
 				],
 				"settings": {
-					"foreground": "#B05C00" // Scite Style 10
+					"foreground": "#808080", // Scite Style 10
+					"fontStyle": "bold"
 				}
 			},
 			{
@@ -242,8 +215,8 @@
 					"keyword.control.include.au3" // Genius
 				 ],
 				"settings": {
-					"foreground": "#0000FF", // Scite Style 11
-					"fontStyle": "italic"
+					"foreground": "#808000", // Scite Style 11
+					"fontStyle": "bold"
 				}
 			},
 			{
@@ -257,8 +230,8 @@
 					"entity.name.function.preprocessor"
 				 ],
 				"settings": {
-					"foreground": "#ABB1FA", // Scite Style 12
-					"fontStyle": "italic"
+					"foreground": "#DC143C", // Scite Style 12
+					"fontStyle": "bold"
 				}
 			},
 			{
@@ -268,7 +241,7 @@
 					"support.type.property-name" // Genius
 			],
 				"settings": {
-					"foreground": "#000080", // Scite Style 14
+					"foreground": "#993399", // Scite Style 14
 					"fontStyle": "bold"
 				}
 			},
@@ -277,7 +250,7 @@
 				"scope": "support.function.other.autoit", // Logan
 				"settings": {
 					"foreground": "#0080FF", // Scite Style 15
-					"fontStyle": "italic"
+					"fontStyle": "bold"
 				}
 			},
 			{
@@ -287,7 +260,7 @@
 					"entity.name.function.au3" // Genius
 				],
 				"settings": {
-					"foreground": "#0080FF", // Scite Style 17 -- Added for cleaner look.
+					"foreground": "#0080FF", // Scite Style 17
 					"fontStyle": "italic underline"
 				}
 			},

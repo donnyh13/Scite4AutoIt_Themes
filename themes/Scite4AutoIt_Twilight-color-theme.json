@@ -1,45 +1,39 @@
 {
-	"name": "Scite4AutoIt_MSDEV",
-	"type": "light",
+	"name": "Scite4AutoIt_Twilight",
+	"type": "dark",
 	"colors": {
-		"editor.background": "#F0F4F9", // Scite Style 32 Back
-		"editor.foreground": "#202020", //? Scite Style 32 Fore -- no Fore value, adding one.
-		"editor.selectionBackground": "#F0A0A850", //? Scite Selection Back (Highlight) + Alpha from Scite Global defaults
-		"editor.selectionForeground": "#006000", //? Scite Selection Fore (Text) from Scite Global defaults
+		"editor.background": "#141414", // Scite Style 32 Back
+		"editor.foreground": "#D0D0D0", //? Scite Style 32 Fore -- no Fore value, adding one.
+		"editor.selectionBackground": "#14141425", // Scite Selection Back (Highlight) + Alpha
+		"editor.selectionForeground": "#CF6A4C", // Scite Selection Fore (Text)
 		"editor.wordHighlightBackground": "#00D04050", //? Scite Selection (highlight.current.word from Scite Global defaults) (Highlight Similar to Current Word), with added 50 Transparency
 		"editor.selectionHighlightBackground": "#00D04050", //? Scite Selection (highlight.current.word from Scite Global defaults) (Highlight Similar Word), with added 50 Transparency
-		"editor.lineHighlightBackground": "#FFFED8", // Scite Caret Line Back
-		// "editorCursor.foreground": "#000000", // Scite Caret Fore
+		"editor.lineHighlightBackground": "#F8F8F805", // Scite Caret Line Back
+		// "editorCursor.foreground": "#FFFFFF", // Scite Caret Fore
 		"editorGutter.background": "#C0C0C0", //? Scite Style 33 Back from Scite Global defaults
 		"editorLineNumber.foreground": "#444444", //? Customized dimmed Style 33 Fore? -- Not set, but using for readability.
 		"editorLineNumber.activeForeground": "#000000", //? Scite Style 33 Fore -- Not set, but using for readability.
 		"editorIndentGuide.background": "#C0C0C0", //? Scite Style 37 Fore from Scite Global defaults
 		// "editorBracketHighlight.foreground1": "#0000FF", // Scite Style 34 Fore
 		// "editorBracketHighlight.unexpectedBracket.foreground": "#009933", // Scite Style 35 Fore
-		"editorHoverWidget.background": "#FFFFFF", //? Scite Style 38 Back (Call Tips) -- Not set, so Adding custom values.
-		"editorHoverWidget.foreground": "#050505", //? Scite Style 38 Fore (Call Tips) -- Not set, so Adding custom values.
-		"editorHoverWidget.highlightForeground": "#FF0000", //? Scite Style Calltips Color Highlight (Call Tips) -- Not set, so Adding custom values.
-		"editor.inactiveSelectionBackground": "#E5EBF1",
-		"editorIndentGuide.activeBackground": "#939393",
-		"editorSuggestWidget.background": "#F3F3F3",
+		"editorHoverWidget.background": "#414339", //? Scite Style 38 Back (Call Tips) -- Not set, so Adding custom values.
+		"editorHoverWidget.foreground": "#F8f8f2", //? Scite Style 38 Fore (Call Tips) -- Not set, so Adding custom values.
+		"editorHoverWidget.highlightForeground": "#C4265E", //? Scite Style Calltips Color Highlight (Call Tips) -- Not set, so Adding custom values.
+		"editor.inactiveSelectionBackground": "#3A3D41",
+		"editorIndentGuide.activeBackground": "#707070",
+		"list.dropBackground": "#383B3D",
 		"activityBarBadge.background": "#007ACC",
-		"sideBarTitle.foreground": "#6F6F6F",
-		"list.hoverBackground": "#E8E8E8",
-		"input.placeholderForeground": "#767676",
-		"searchEditor.textInputBorder": "#CECECE",
-		"settings.textInputBorder": "#CECECE",
-		"settings.numberInputBorder": "#CECECE",
+		"sideBarTitle.foreground": "#BBBBBB",
+		"input.placeholderForeground": "#A6A6A6",
+		"menu.background": "#303031",
+		"menu.foreground": "#CCCCCC",
 		"statusBarItem.remoteForeground": "#FFF",
 		"statusBarItem.remoteBackground": "#16825D",
 		"ports.iconRunningProcessForeground": "#369432",
 		"sideBarSectionHeader.background": "#0000",
-		"sideBarSectionHeader.border": "#61616130",
-		"tab.lastPinnedBorder": "#61616130",
-		"notebook.cellBorderColor": "#E8E8E8",
-		"notebook.selectedCellBackground": "#c8ddf150",
-		"statusBarItem.errorBackground": "#c72e0f",
-		"list.activeSelectionIconForeground": "#FFF",
-		"list.focusAndSelectionOutline": "#90C2F9"
+		"sideBarSectionHeader.border": "#ccc3",
+		"tab.lastPinnedBorder": "#ccc3",
+		"list.activeSelectionIconForeground": "#FFF"
 	},
 	"tokenColors": [
 			{
@@ -51,7 +45,7 @@
 					"string.unquoted.pragma.value.au3" // Genius
 				],
 				"settings": {
-					"foreground": "#000000" // Scite Style 0
+					"foreground": "#F8F8F8" // Scite Style 0
 				}
 			},
 			{
@@ -62,7 +56,8 @@
 					"comment.line.au3", // Genius
 				],
 				"settings": {
-					"foreground": "#009933" // Scite Style 1 
+					"foreground": "#5F5A60", // Scite Style 1
+					"fontStyle": "italic"
 				}
 			},
 			{
@@ -72,7 +67,7 @@
 					"comment.block.au3" // Genius
 				],
 				"settings": {
-					"foreground": "#669900", // Scite Style 2
+					"foreground": "#5F5A60", // Scite Style  2
 					"fontStyle": "italic"
 				}
 			},
@@ -90,15 +85,17 @@
 					"constant.numeric.integer.au3" // Genius
 				],
 				"settings": {
-					"foreground": "#004040" // Scite Style 3
+					"foreground": "#CF6A4C" // Scite Style 3
 				}
 			},
 			{
 				"name": "Functions - BuiltIn",
-				"scope": "support.function.autoit", // Logan
+				"scope": [
+					"support.function.autoit", // Logan
+					"support.function.au3" // Genius ? Proposed
+				],
 				"settings": {
-					"foreground": "#000080", // Scite Style 4
-					"fontStyle": "italic"
+					"foreground": "#DAD085" // Scite Style 4
 				}
 			},
 			{
@@ -126,44 +123,9 @@
 					"storage"
 				],
 				"settings": {
-					"foreground": "#0000FF" // Scite Style 5
+					"foreground": "#F9EE98" // Scite Style 5
 				}
 			},
-			// {
-			// 	"name": "Keyword: Func, Const, Enum",
-			// 	"scope": [
-			// 		"storage.type",
-			// 		"storage.type.autoit", // Logan
-			// 		"storage.type.function.au3", // Genius
-			// 		"storage.type.enum.au3" // Genius
-			// 	],
-			// 	"settings": {
-			// 		"foreground": "#C080C0" // Scite Style 5
-			// 	}
-			// },
-			// {
-			// 	"name": "Keyword: Variable Scope etc",
-			// 	"scope": [
-			// 		"storage.modifier",
-			// 		"keyword.operator.noexcept",
-			// 		"storage.modifier.autoit", // Logan
-			// 		"storage.modifier.au3" // Genius
-			// 	],
-			// 	"settings": {
-			// 		"foreground": "#C080C0" // Scite Style 5
-			// 	}
-			// },
-			// {
-			// 	"name": "Keyword: Conditional Statements etc.",
-			// 	"scope": [
-			// 		"keyword.control",
-			// 		"keyword.control.autoit", // Logan
-			// 		"keyword.control.au3" //Genius
-			// 	],
-			// 	"settings": {
-			// 		"foreground": "#C080C0" // Scite Style 5
-			// 	}
-			// },
 			{
 				"name": "AutoIt Macros",
 				"scope": [
@@ -171,7 +133,7 @@
 					"variable.other.constant.au3" // Genius
 				],
 				"settings": {
-					"foreground": "#800000" // Scite Style 6
+					"foreground": "#DADADA" // Scite Style 6
 				}
 			},
 			{
@@ -189,7 +151,7 @@
 					"source.groovy.embedded"
 				],
 				"settings": {
-					"foreground": "#008080" // Scite Style 7
+					"foreground": "#8F9D6A" // Scite Style 7
 				}
 			},
 			{
@@ -205,7 +167,7 @@
 					"keyword.operator"
 				],
 				"settings": {
-					"foreground": "#000000" // Scite Style 8
+					"foreground": "#CDA869" // Scite Style 8
 				}
 			},
 			{
@@ -217,7 +179,7 @@
 					"variable.other.au3" // Genius
 				],
 				"settings": {
-					"foreground": "#5A5A5A" // Scite Style 9
+					"foreground": "#7587A6" // Scite Style 9
 				}
 			},
 			{
@@ -226,7 +188,7 @@
 					"constant.other.send-key.autoit" // Logan
 				],
 				"settings": {
-					"foreground": "#B05C00" // Scite Style 10
+					"foreground": "#DADADA" // Scite Style 10
 				}
 			},
 			{
@@ -242,8 +204,7 @@
 					"keyword.control.include.au3" // Genius
 				 ],
 				"settings": {
-					"foreground": "#0000FF", // Scite Style 11
-					"fontStyle": "italic"
+					"foreground": "#8996A8" // Scite Style 11
 				}
 			},
 			{
@@ -257,8 +218,7 @@
 					"entity.name.function.preprocessor"
 				 ],
 				"settings": {
-					"foreground": "#ABB1FA", // Scite Style 12
-					"fontStyle": "italic"
+					"foreground": "#DADADA" // Scite Style 12
 				}
 			},
 			{
@@ -268,16 +228,14 @@
 					"support.type.property-name" // Genius
 			],
 				"settings": {
-					"foreground": "#000080", // Scite Style 14
-					"fontStyle": "bold"
+					"foreground": "#0080FF" // Scite Style 14
 				}
 			},
 			{
 				"name": "Functions - Standard UDF's",
 				"scope": "support.function.other.autoit", // Logan
 				"settings": {
-					"foreground": "#0080FF", // Scite Style 15
-					"fontStyle": "italic"
+					"foreground": "#0080FF" // Scite Style 15
 				}
 			},
 			{
@@ -287,8 +245,8 @@
 					"entity.name.function.au3" // Genius
 				],
 				"settings": {
-					"foreground": "#0080FF", // Scite Style 17 -- Added for cleaner look.
-					"fontStyle": "italic underline"
+					"foreground": "#0080FF", // Scite Style 17
+					"fontStyle": "underline"
 				}
 			},
 			// These don't work ??
@@ -319,7 +277,7 @@
 			// 	"name": "Errors Start with - or <",
 			// 	"scope": "vscode-autoit-output-SCE_ERR_DIFF_DELETION", // Logan
 			// 	"settings": {
-			// 		"foreground": "#FF8800", // Scite Style Errorlist 12
+			// 		"foreground": "#FFC90E", // Scite Style Errorlist 12
 			// 		"fontStyle": "bold"
 			// 	}
 			// },
@@ -329,27 +287,27 @@
 					"invalid"
 				],
 				"settings": {
-					"foreground": "#cd3131"
+					"foreground": "#f44747"
 				}
 			},
 			// {
 			// 	"name": "Storage",
 			// 	"scope": "storage",
 			// 	"settings": {
-			// 		"foreground": "#0000ff"
+			// 		"foreground": "#569cd6"
 			// 	}
 			// },
 			{
 				"name": "Keyword",
 				"scope": "keyword",
 				"settings": {
-					"foreground": "#0000ff"
+					"foreground": "#569cd6"
 				}
 			},
 			// {
 			// 	"scope": "keyword.operator",
 			// 	"settings": {
-			// 		"foreground": "#000000"
+			// 		"foreground": "#d4d4d4"
 			// 	}
 			// },
 			{
@@ -366,13 +324,13 @@
 					"keyword.operator.wordlike"
 				],
 				"settings": {
-					"foreground": "#0000ff"
+					"foreground": "#569cd6"
 				}
 			},
 			{
 				"scope": "keyword.other.unit",
 				"settings": {
-					"foreground": "#098658"
+					"foreground": "#b5cea8"
 				}
 			},
 			// {
@@ -381,7 +339,7 @@
 			// 		"source.groovy.embedded"
 			// 	],
 			// 	"settings": {
-			// 		"foreground": "#000000ff"
+			// 		"foreground": "#D4D4D4"
 			// 	}
 			// },
 			{
@@ -405,25 +363,25 @@
 			{
 				"scope": "constant.regexp",
 				"settings": {
-					"foreground": "#811f3f"
+					"foreground": "#646695"
 				}
 			},
 			{
 				"scope": "entity.name.tag",
 				"settings": {
-					"foreground": "#800000"
+					"foreground": "#569cd6"
 				}
 			},
 			{
-				"scope": "entity.name.selector",
+				"scope": "entity.name.tag.css",
 				"settings": {
-					"foreground": "#800000"
+					"foreground": "#d7ba7d"
 				}
 			},
 			{
 				"scope": "entity.other.attribute-name",
 				"settings": {
-					"foreground": "#ff0000"
+					"foreground": "#9cdcfe"
 				}
 			},
 			{
@@ -438,7 +396,7 @@
 					"entity.other.attribute-name.scss"
 				],
 				"settings": {
-					"foreground": "#800000"
+					"foreground": "#d7ba7d"
 				}
 			},
 			{
@@ -451,14 +409,14 @@
 				"scope": "markup.bold",
 				"settings": {
 					"fontStyle": "bold",
-					"foreground": "#000080"
+					"foreground": "#569cd6"
 				}
 			},
 			{
 				"scope": "markup.heading",
 				"settings": {
 					"fontStyle": "bold",
-					"foreground": "#800000"
+					"foreground": "#569cd6"
 				}
 			},
 			{
@@ -476,40 +434,44 @@
 			{
 				"scope": "markup.inserted",
 				"settings": {
-					"foreground": "#098658"
+					"foreground": "#b5cea8"
 				}
 			},
 			{
 				"scope": "markup.deleted",
 				"settings": {
-					"foreground": "#a31515"
+					"foreground": "#ce9178"
 				}
 			},
 			{
 				"scope": "markup.changed",
 				"settings": {
-					"foreground": "#0451a5"
+					"foreground": "#569cd6"
 				}
 			},
 			{
-				"scope": [
-					"punctuation.definition.quote.begin.markdown",
-					"punctuation.definition.list.begin.markdown"
-				],
+				"scope": "punctuation.definition.quote.begin.markdown",
 				"settings": {
-					"foreground": "#0451a5"
+					"foreground": "#6A9955"
 				}
-			},{
+			},
+			{
+				"scope": "punctuation.definition.list.begin.markdown",
+				"settings": {
+					"foreground": "#6796e6"
+				}
+			},
+			{
 				"scope": "markup.inline.raw",
 				"settings": {
-					"foreground": "#800000"
+					"foreground": "#ce9178"
 				}
 			},
 			{
 				"name": "brackets of XML/HTML tags",
 				"scope": "punctuation.definition.tag",
 				"settings": {
-					"foreground": "#800000"
+					"foreground": "#808080"
 				}
 			},
 			// {
@@ -518,37 +480,49 @@
 			// 		"entity.name.function.preprocessor"
 			// 	],
 			// 	"settings": {
-			// 		"foreground": "#0000ff"
+			// 		"foreground": "#569cd6"
 			// 	}
 			// },
 			{
 				"scope": "meta.preprocessor.string",
 				"settings": {
-					"foreground": "#a31515"
+					"foreground": "#ce9178"
 				}
 			},
 			{
 				"scope": "meta.preprocessor.numeric",
 				"settings": {
-					"foreground": "#098658"
+					"foreground": "#b5cea8"
 				}
 			},
 			{
 				"scope": "meta.structure.dictionary.key.python",
 				"settings": {
-					"foreground": "#0451a5"
+					"foreground": "#9cdcfe"
 				}
 			},
 			{
 				"scope": "meta.diff.header",
 				"settings": {
-					"foreground": "#000080"
+					"foreground": "#569cd6"
+				}
+			},
+			{
+				"scope": "string.tag",
+				"settings": {
+					"foreground": "#ce9178"
+				}
+			},
+			{
+				"scope": "string.value",
+				"settings": {
+					"foreground": "#ce9178"
 				}
 			},
 			{
 				"scope": "string.regexp",
 				"settings": {
-					"foreground": "#811f3f"
+					"foreground": "#d16969"
 				}
 			},
 			{
@@ -559,7 +533,7 @@
 					"punctuation.section.embedded"
 				],
 				"settings": {
-					"foreground": "#0000ff"
+					"foreground": "#569cd6"
 				}
 			},
 			{
@@ -568,21 +542,7 @@
 					"meta.template.expression"
 				],
 				"settings": {
-					"foreground": "#000000"
-				}
-			},
-			{
-				"scope": [
-					"support.constant.property-value",
-					"support.constant.font-name",
-					"support.constant.media-type",
-					"support.constant.media",
-					"constant.other.color.rgb-value",
-					"constant.other.rgb-value",
-					"support.constant.color"
-				],
-				"settings": {
-					"foreground": "#0451a5"
+					"foreground": "#d4d4d4"
 				}
 			},
 			{
@@ -595,15 +555,7 @@
 					"source.coffee.embedded"
 				],
 				"settings": {
-					"foreground": "#ff0000"
-				}
-			},
-			{
-				"scope": [
-					"support.type.property-name.json"
-				],
-				"settings": {
-					"foreground": "#0451a5"
+					"foreground": "#9cdcfe"
 				}
 			},
 			{
@@ -612,19 +564,19 @@
 					"punctuation.section.embedded.end.php"
 				],
 				"settings": {
-					"foreground": "#800000"
+					"foreground": "#569cd6"
 				}
 			},
 			{
 				"scope": "support.function.git-rebase",
 				"settings": {
-					"foreground": "#0451a5"
+					"foreground": "#9cdcfe"
 				}
 			},
 			{
 				"scope": "constant.sha.git-rebase",
 				"settings": {
-					"foreground": "#098658"
+					"foreground": "#b5cea8"
 				}
 			},
 			{
@@ -635,38 +587,233 @@
 					"storage.modifier.package.java"
 				],
 				"settings": {
-					"foreground": "#000000"
-				}
-			},
-			{
-				"scope": [
-					"string.comment.buffered.block.pug",
-					"string.quoted.pug",
-					"string.interpolated.pug",
-					"string.unquoted.plain.in.yaml",
-					"string.unquoted.plain.out.yaml",
-					"string.unquoted.block.yaml",
-					"string.quoted.single.yaml",
-					"string.quoted.double.xml",
-					"string.quoted.single.xml",
-					"string.unquoted.cdata.xml",
-					"string.quoted.double.html",
-					"string.quoted.single.html",
-					"string.unquoted.html",
-					"string.quoted.single.handlebars",
-					"string.quoted.double.handlebars"
-				],
-				"settings": {
-					"foreground": "#0000ff"
+					"foreground": "#d4d4d4"
 				}
 			}
 		],
 		"semanticHighlighting": true,
 		"semanticTokenColors": {
-			"newOperator": "#0000ff",
-			"stringLiteral": "#a31515",
-			"customLiteral": "#000000",
-			"numberLiteral": "#098658",
+			"newOperator": "#d4d4d4",
+			"stringLiteral": "#ce9178",
+			"customLiteral": "#D4D4D4",
+			"numberLiteral": "#b5cea8"
 		}
 	
 }
+
+
+
+// "editor.tokenColorCustomizations": {
+    
+// 	"textMateRules": [
+// 		{
+// 			"scope": "vscode-autoit-output-olive",
+// 			"settings": {
+// 				"foreground": "#808000"
+// 			}
+// 		},
+// 		{
+// 			"scope": "entity.name.function",
+// 			"settings": {
+// 				"foreground": "#da1899"
+// 			}
+// 		},
+// 		{
+// 			"scope": "vscode-autoit-output-SCE_ERR_CMD",
+// 			"settings": {
+// 				"foreground": "#3d85c6"
+// 			}
+// 		},
+// 		{
+// 			"scope": "vscode-autoit-output-SCE_ERR_DIFF_CHANGED",
+// 			"settings": {
+// 				"foreground": "#f70000",
+// 				"fontStyle": "bold"
+// 			}
+// 		},
+// 		{
+// 			"scope": "vscode-autoit-output-SCE_ERR_DIFF_ADDITION",
+// 			"settings": {
+// 				"foreground": "#6aa84f"
+// 			}
+// 		},
+// 		{
+// 			"scope": "vscode-autoit-output-SCE_ERR_DIFF_DELETION",
+// 			"settings": {
+// 				"foreground": "#ff8800"
+// 			}
+// 		},
+// 		{
+// 			"scope": "vscode-autoit-output-SCE_ERR_DIFF_MESSAGE",
+// 			"settings": {
+// 				"foreground": "#7F0000"
+// 			}
+// 		},
+// 		{
+// 			"scope": "vscode-autoit-output-date",
+// 			"settings": {
+// 				"foreground": "#7a837f"
+// 			}
+// 		},
+// 		{
+// 			"scope": "vscode-autoit-output-debug",
+// 			"settings": {
+// 				"foreground": "#d6ae5d"
+// 			}
+// 		},
+// 		{
+// 			"scope": "vscode-autoit-output-process",
+// 			"settings": {
+// 				"foreground": "#a7a061",
+// 				"fontStyle": "italic"
+// 			}
+// 		},
+// 		{
+// 			"scope": "vscode-autoit-output-process-id",
+// 			"settings": {
+// 				"foreground": "#d65d81",
+// 				"fontStyle": "italic"
+// 			}
+// 		},
+// 		{
+// 			"scope": "vscode-autoit-output-process-file",
+// 			"settings": {
+// 				"foreground": "#81b2c7"
+// 			}
+// 		},
+// 		{
+// 			"scope": "vscode-autoit-output-process-pid",
+// 			"settings": {
+// 				"foreground": "#56bf00"
+// 			}
+// 		},
+// 		{
+// 			"scope": "vscode-autoit-output-SCE_ERR_BORLAND",
+// 			"settings": {
+// 				"foreground": "#B06000"
+// 			}
+// 		},
+// 		{
+// 			"scope": "vscode-autoit-output-SCE_ERR_IFC",
+// 			"settings": {
+// 				"foreground": "#FF0000"
+// 			}
+// 		},
+// 		{
+// 			"scope": "vscode-autoit-output-SCE_ERR_GCC_INCLUDED_FROM",
+// 			"settings": {
+// 				"foreground": "#800080"
+// 			}
+// 		},
+// 		{
+// 			"scope": "vscode-autoit-output-SCE_ERR_GCC_INCLUDED_FROM",
+// 			"settings": {
+// 				"foreground": "#800080"
+// 			}
+// 		},
+// 		{
+// 			"scope": "vscode-autoit-output-SCE_ERR_IFORT",
+// 			"settings": {
+// 				"foreground": "#FF0000"
+// 			}
+// 		},
+// 		{
+// 			"scope": "vscode-autoit-output-SCE_ERR_PYTHON",
+// 			"settings": {
+// 				"foreground": "#FF0000"
+// 			}
+// 		},
+// 		{
+// 			"scope": "vscode-autoit-output-SCE_ERR_PERL",
+// 			"settings": {
+// 				"foreground": "#FF0000"
+// 			}
+// 		},
+// 		{
+// 			"scope": "vscode-autoit-output-SCE_ERR_NET",
+// 			"settings": {
+// 				"foreground": "#FF0000"
+// 			}
+// 		},
+// 		{
+// 			"scope": "vscode-autoit-output-SCE_ERR_LUA",
+// 			"settings": {
+// 				"foreground": "#FF0000"
+// 			}
+// 		},
+// 		{
+// 			"scope": "vscode-autoit-output-SCE_ERR_ELF",
+// 			"settings": {
+// 				"foreground": "#FF0000"
+// 			}
+// 		},
+// 		{
+// 			"scope": "vscode-autoit-output-SCE_ERR_TIDY",
+// 			"settings": {
+// 				"foreground": "#FF0000"
+// 			}
+// 		},
+// 		{
+// 			"scope": "vscode-autoit-output-SCE_ERR_JAVA_STACK",
+// 			"settings": {
+// 				"foreground": "#FF0000"
+// 			}
+// 		},
+// 		{
+// 			"scope": "vscode-autoit-output-SCE_ERR_PHP",
+// 			"settings": {
+// 				"foreground": "#FF0000"
+// 			}
+// 		},
+// 		{
+// 			"scope": "vscode-autoit-output-SCE_ERR_MS",
+// 			"settings": {
+// 				"foreground": "#808000"
+// 			}
+// 		},
+// 		{
+// 			"scope": "vscode-autoit-output-SCE_ERR_GCC",
+// 			"settings": {
+// 				"foreground": "#800080"
+// 			}
+// 		},
+// 		{
+// 			"scope": "vscode-autoit-output-SCE_ERR_GCC_EXCERPT",
+// 			"settings": {
+// 				"foreground": "#B06000"
+// 			}
+// 		},
+// 		{
+// 			"scope": "vscode-autoit-output-SCE_ERR_CTAG",
+// 			"settings": {
+// 				"foreground": "#FF00FF"
+// 			}
+// 		},
+// 		{
+// 			"scope": "vscode-autoit-output-EXIT",
+// 			"settings": {
+// 				"foreground": "#3d85c6"
+// 			}
+// 		},
+// 		{
+// 			"scope": "vscode-autoit-output-EXIT_ERROR",
+// 			"settings": {
+// 				"foreground": "#f70000",
+// 				"fontStyle": "bold"
+// 			}
+// 		},
+// 		{
+// 			"scope": "vscode-autoit-output-EXIT_WARNING",
+// 			"settings": {
+// 				"foreground": "#ff8800"
+// 			}
+// 		},
+// 		{
+// 			"scope": "vscode-autoit-output-SCE_ERR_ABSF",
+// 			"settings": {
+// 				"foreground": "#FF0000"
+// 			}
+// 		}
+// 	]
+// },
+// }

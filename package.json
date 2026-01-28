@@ -37,6 +37,21 @@
         "label": "Scite4AutoIt_MSDEV",
         "uiTheme": "vs",
         "path": "./themes/Scite4AutoIt_MSDEV-color-theme.json"
+      },
+      {
+        "label": "Scite4AutoIt_MSDEV2",
+        "uiTheme": "vs",
+        "path": "./themes/Scite4AutoIt_MSDEV2-color-theme.json"
+      },
+      {
+        "label": "Scite4AutoIt_Old_LCD",
+        "uiTheme": "vs",
+        "path": "./themes/Scite4AutoIt_Old_LCD-color-theme.json"
+      },
+      {
+        "label": "Scite4AutoIt_Twilight",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Scite4AutoIt_Twilight-color-theme.json"
       }
     ]
   }
