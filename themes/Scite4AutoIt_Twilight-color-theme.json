@@ -51,9 +51,8 @@
 			{
 				"name": "Line Comments",
 				"scope": [
-					"comment",
 					"comment.line.semicolon.autoit", // Logan
-					"comment.line.au3", // Genius
+					"comment.line.au3" // Genius
 				],
 				"settings": {
 					"foreground": "#5F5A60", // Scite Style 1
@@ -74,10 +73,6 @@
 			{
 				"name": "Numbers",
 				"scope": [
-					"constant.numeric",
-					"variable.other.enummember",
-					"keyword.operator.plus.exponent",
-					"keyword.operator.minus.exponent",
 					"constant.numeric.autoit", // Logan
 					"constant.numeric.scientific_notation.au3", // Genius
 					"constant.numeric.hex.au3", // Genius
@@ -101,26 +96,19 @@
 			{
 				"name": "Keyword: True/False, Null/Default, And/Or/Not",
 				"scope": [
-					"constant.language",
 					"constant.language.autoit", // Logan
 					"keyword.operator.logical.autoit", // Logan
 					"keyword.control.au3", // Genius
 					// Keyword: Func, Const, Enum
-					"storage.type",
 					"storage.type.autoit", // Logan
 					"storage.type.function.au3", // Genius
 					"storage.type.enum.au3", // Genius
 					// Keyword: Variable Scope etc
-					"storage.modifier",
-					"keyword.operator.noexcept",
 					"storage.modifier.autoit", // Logan
 					"storage.modifier.au3", // Genius
 					// Keyword: Conditional Statements etc.
-					"keyword.control",
 					"keyword.control.autoit", // Logan
-					"keyword.control.au3", //Genius
-					// Combining
-					"storage"
+					"keyword.control.au3" //Genius
 				],
 				"settings": {
 					"foreground": "#F9EE98" // Scite Style 5
@@ -144,11 +132,7 @@
 					"string.quoted.double.autoit", // Logan
 					"string.quoted.double.au3", // Genius
 					"string.quoted.pragma.value.au3", // Genius
-					"string.other.include.au3", // Genius
-					"meta.embedded.assembly",
-					// Combining
-					"meta.embedded",
-					"source.groovy.embedded"
+					"string.other.include.au3" // Genius
 				],
 				"settings": {
 					"foreground": "#8F9D6A" // Scite Style 7
@@ -162,9 +146,7 @@
 					"keyword.operator.comparison.autoit", // Logan
 					"punctuation.bracket.autoit", // Logan
 					"punctuation.commadot.autoit", // Logan
-					"keyword.operator.au3", // Genius
-					// Combining
-					"keyword.operator"
+					"keyword.operator.au3" // Genius
 				],
 				"settings": {
 					"foreground": "#CDA869" // Scite Style 8
@@ -174,7 +156,6 @@
 				// "name": "this.self",
 				"name": "User Variables",
 				"scope": [
-					"variable.language", 
 					"variable.other.autoit", // Logan
 					"variable.other.au3" // Genius
 				],
@@ -212,10 +193,7 @@
 				"scope": [
 					"meta.preprocessor.autoit", // Logan
 					"meta.preprocessor.au3", // Genius
-					"keyword.control.pragma.au3", // Genius
-					// Combining
-					"meta.preprocessor",
-					"entity.name.function.preprocessor"
+					"keyword.control.pragma.au3" // Genius
 				 ],
 				"settings": {
 					"foreground": "#DADADA" // Scite Style 12
@@ -282,66 +260,14 @@
 			// 	}
 			// },
 			{
-				"name": "Invalid",
 				"scope": [
-					"invalid"
+					"meta.embedded",
+					"source.groovy.embedded"
 				],
 				"settings": {
-					"foreground": "#f44747"
+					"foreground": "#D4D4D4"
 				}
 			},
-			// {
-			// 	"name": "Storage",
-			// 	"scope": "storage",
-			// 	"settings": {
-			// 		"foreground": "#569cd6"
-			// 	}
-			// },
-			{
-				"name": "Keyword",
-				"scope": "keyword",
-				"settings": {
-					"foreground": "#569cd6"
-				}
-			},
-			// {
-			// 	"scope": "keyword.operator",
-			// 	"settings": {
-			// 		"foreground": "#d4d4d4"
-			// 	}
-			// },
-			{
-				"scope": [
-					"keyword.operator.new",
-					"keyword.operator.expression",
-					"keyword.operator.cast",
-					"keyword.operator.sizeof",
-					"keyword.operator.alignof",
-					"keyword.operator.typeid",
-					"keyword.operator.alignas",
-					"keyword.operator.instanceof",
-					"keyword.operator.logical.python",
-					"keyword.operator.wordlike"
-				],
-				"settings": {
-					"foreground": "#569cd6"
-				}
-			},
-			{
-				"scope": "keyword.other.unit",
-				"settings": {
-					"foreground": "#b5cea8"
-				}
-			},
-			// {
-			// 	"scope": [
-			// 		"meta.embedded",
-			// 		"source.groovy.embedded"
-			// 	],
-			// 	"settings": {
-			// 		"foreground": "#D4D4D4"
-			// 	}
-			// },
 			{
 				"scope": "emphasis",
 				"settings": {
@@ -358,6 +284,29 @@
 				"scope": "header",
 				"settings": {
 					"foreground": "#000080"
+				}
+			},
+			{
+				"scope": "comment",
+				"settings": {
+					"foreground": "#6A9955"
+				}
+			},
+			{
+				"scope": "constant.language",
+				"settings": {
+					"foreground": "#569cd6"
+				}
+			},
+			{
+				"scope": [
+					"constant.numeric",
+					"variable.other.enummember",
+					"keyword.operator.plus.exponent",
+					"keyword.operator.minus.exponent"
+				],
+				"settings": {
+					"foreground": "#b5cea8"
 				}
 			},
 			{
@@ -397,6 +346,12 @@
 				],
 				"settings": {
 					"foreground": "#d7ba7d"
+				}
+			},
+			{
+				"scope": "invalid",
+				"settings": {
+					"foreground": "#f44747"
 				}
 			},
 			{
@@ -474,15 +429,15 @@
 					"foreground": "#808080"
 				}
 			},
-			// {
-			// 	"scope": [
-			// 		"meta.preprocessor",
-			// 		"entity.name.function.preprocessor"
-			// 	],
-			// 	"settings": {
-			// 		"foreground": "#569cd6"
-			// 	}
-			// },
+			{
+				"scope": [
+					"meta.preprocessor",
+					"entity.name.function.preprocessor"
+				],
+				"settings": {
+					"foreground": "#569cd6"
+				}
+			},
 			{
 				"scope": "meta.preprocessor.string",
 				"settings": {
@@ -505,6 +460,36 @@
 				"scope": "meta.diff.header",
 				"settings": {
 					"foreground": "#569cd6"
+				}
+			},
+			{
+				"scope": "storage",
+				"settings": {
+					"foreground": "#569cd6"
+				}
+			},
+			{
+				"scope": "storage.type",
+				"settings": {
+					"foreground": "#569cd6"
+				}
+			},
+			{
+				"scope": [
+					"storage.modifier",
+					"keyword.operator.noexcept"
+				],
+				"settings": {
+					"foreground": "#569cd6"
+				}
+			},
+			{
+				"scope": [
+					"string",
+					"meta.embedded.assembly"
+				],
+				"settings": {
+					"foreground": "#ce9178"
 				}
 			},
 			{
@@ -559,6 +544,47 @@
 				}
 			},
 			{
+				"scope": "keyword",
+				"settings": {
+					"foreground": "#569cd6"
+				}
+			},
+			{
+				"scope": "keyword.control",
+				"settings": {
+					"foreground": "#569cd6"
+				}
+			},
+			{
+				"scope": "keyword.operator",
+				"settings": {
+					"foreground": "#d4d4d4"
+				}
+			},
+			{
+				"scope": [
+					"keyword.operator.new",
+					"keyword.operator.expression",
+					"keyword.operator.cast",
+					"keyword.operator.sizeof",
+					"keyword.operator.alignof",
+					"keyword.operator.typeid",
+					"keyword.operator.alignas",
+					"keyword.operator.instanceof",
+					"keyword.operator.logical.python",
+					"keyword.operator.wordlike"
+				],
+				"settings": {
+					"foreground": "#569cd6"
+				}
+			},
+			{
+				"scope": "keyword.other.unit",
+				"settings": {
+					"foreground": "#b5cea8"
+				}
+			},
+			{
 				"scope": [
 					"punctuation.section.embedded.begin.php",
 					"punctuation.section.embedded.end.php"
@@ -589,6 +615,13 @@
 				"settings": {
 					"foreground": "#d4d4d4"
 				}
+			},
+			{
+				"name": "this.self",
+				"scope": "variable.language",
+				"settings": {
+					"foreground": "#569cd6"
+				}
 			}
 		],
 		"semanticHighlighting": true,
@@ -600,220 +633,3 @@
 		}
 	
 }
-
-
-
-// "editor.tokenColorCustomizations": {
-    
-// 	"textMateRules": [
-// 		{
-// 			"scope": "vscode-autoit-output-olive",
-// 			"settings": {
-// 				"foreground": "#808000"
-// 			}
-// 		},
-// 		{
-// 			"scope": "entity.name.function",
-// 			"settings": {
-// 				"foreground": "#da1899"
-// 			}
-// 		},
-// 		{
-// 			"scope": "vscode-autoit-output-SCE_ERR_CMD",
-// 			"settings": {
-// 				"foreground": "#3d85c6"
-// 			}
-// 		},
-// 		{
-// 			"scope": "vscode-autoit-output-SCE_ERR_DIFF_CHANGED",
-// 			"settings": {
-// 				"foreground": "#f70000",
-// 				"fontStyle": "bold"
-// 			}
-// 		},
-// 		{
-// 			"scope": "vscode-autoit-output-SCE_ERR_DIFF_ADDITION",
-// 			"settings": {
-// 				"foreground": "#6aa84f"
-// 			}
-// 		},
-// 		{
-// 			"scope": "vscode-autoit-output-SCE_ERR_DIFF_DELETION",
-// 			"settings": {
-// 				"foreground": "#ff8800"
-// 			}
-// 		},
-// 		{
-// 			"scope": "vscode-autoit-output-SCE_ERR_DIFF_MESSAGE",
-// 			"settings": {
-// 				"foreground": "#7F0000"
-// 			}
-// 		},
-// 		{
-// 			"scope": "vscode-autoit-output-date",
-// 			"settings": {
-// 				"foreground": "#7a837f"
-// 			}
-// 		},
-// 		{
-// 			"scope": "vscode-autoit-output-debug",
-// 			"settings": {
-// 				"foreground": "#d6ae5d"
-// 			}
-// 		},
-// 		{
-// 			"scope": "vscode-autoit-output-process",
-// 			"settings": {
-// 				"foreground": "#a7a061",
-// 				"fontStyle": "italic"
-// 			}
-// 		},
-// 		{
-// 			"scope": "vscode-autoit-output-process-id",
-// 			"settings": {
-// 				"foreground": "#d65d81",
-// 				"fontStyle": "italic"
-// 			}
-// 		},
-// 		{
-// 			"scope": "vscode-autoit-output-process-file",
-// 			"settings": {
-// 				"foreground": "#81b2c7"
-// 			}
-// 		},
-// 		{
-// 			"scope": "vscode-autoit-output-process-pid",
-// 			"settings": {
-// 				"foreground": "#56bf00"
-// 			}
-// 		},
-// 		{
-// 			"scope": "vscode-autoit-output-SCE_ERR_BORLAND",
-// 			"settings": {
-// 				"foreground": "#B06000"
-// 			}
-// 		},
-// 		{
-// 			"scope": "vscode-autoit-output-SCE_ERR_IFC",
-// 			"settings": {
-// 				"foreground": "#FF0000"
-// 			}
-// 		},
-// 		{
-// 			"scope": "vscode-autoit-output-SCE_ERR_GCC_INCLUDED_FROM",
-// 			"settings": {
-// 				"foreground": "#800080"
-// 			}
-// 		},
-// 		{
-// 			"scope": "vscode-autoit-output-SCE_ERR_GCC_INCLUDED_FROM",
-// 			"settings": {
-// 				"foreground": "#800080"
-// 			}
-// 		},
-// 		{
-// 			"scope": "vscode-autoit-output-SCE_ERR_IFORT",
-// 			"settings": {
-// 				"foreground": "#FF0000"
-// 			}
-// 		},
-// 		{
-// 			"scope": "vscode-autoit-output-SCE_ERR_PYTHON",
-// 			"settings": {
-// 				"foreground": "#FF0000"
-// 			}
-// 		},
-// 		{
-// 			"scope": "vscode-autoit-output-SCE_ERR_PERL",
-// 			"settings": {
-// 				"foreground": "#FF0000"
-// 			}
-// 		},
-// 		{
-// 			"scope": "vscode-autoit-output-SCE_ERR_NET",
-// 			"settings": {
-// 				"foreground": "#FF0000"
-// 			}
-// 		},
-// 		{
-// 			"scope": "vscode-autoit-output-SCE_ERR_LUA",
-// 			"settings": {
-// 				"foreground": "#FF0000"
-// 			}
-// 		},
-// 		{
-// 			"scope": "vscode-autoit-output-SCE_ERR_ELF",
-// 			"settings": {
-// 				"foreground": "#FF0000"
-// 			}
-// 		},
-// 		{
-// 			"scope": "vscode-autoit-output-SCE_ERR_TIDY",
-// 			"settings": {
-// 				"foreground": "#FF0000"
-// 			}
-// 		},
-// 		{
-// 			"scope": "vscode-autoit-output-SCE_ERR_JAVA_STACK",
-// 			"settings": {
-// 				"foreground": "#FF0000"
-// 			}
-// 		},
-// 		{
-// 			"scope": "vscode-autoit-output-SCE_ERR_PHP",
-// 			"settings": {
-// 				"foreground": "#FF0000"
-// 			}
-// 		},
-// 		{
-// 			"scope": "vscode-autoit-output-SCE_ERR_MS",
-// 			"settings": {
-// 				"foreground": "#808000"
-// 			}
-// 		},
-// 		{
-// 			"scope": "vscode-autoit-output-SCE_ERR_GCC",
-// 			"settings": {
-// 				"foreground": "#800080"
-// 			}
-// 		},
-// 		{
-// 			"scope": "vscode-autoit-output-SCE_ERR_GCC_EXCERPT",
-// 			"settings": {
-// 				"foreground": "#B06000"
-// 			}
-// 		},
-// 		{
-// 			"scope": "vscode-autoit-output-SCE_ERR_CTAG",
-// 			"settings": {
-// 				"foreground": "#FF00FF"
-// 			}
-// 		},
-// 		{
-// 			"scope": "vscode-autoit-output-EXIT",
-// 			"settings": {
-// 				"foreground": "#3d85c6"
-// 			}
-// 		},
-// 		{
-// 			"scope": "vscode-autoit-output-EXIT_ERROR",
-// 			"settings": {
-// 				"foreground": "#f70000",
-// 				"fontStyle": "bold"
-// 			}
-// 		},
-// 		{
-// 			"scope": "vscode-autoit-output-EXIT_WARNING",
-// 			"settings": {
-// 				"foreground": "#ff8800"
-// 			}
-// 		},
-// 		{
-// 			"scope": "vscode-autoit-output-SCE_ERR_ABSF",
-// 			"settings": {
-// 				"foreground": "#FF0000"
-// 			}
-// 		}
-// 	]
-// },
-// }
