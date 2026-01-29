@@ -92,7 +92,10 @@
 			},
 			{
 				"name": "Functions - BuiltIn",
-				"scope": "support.function.autoit", // Logan
+				"scope": [
+					"support.function.autoit", // Logan
+					"support.function.au3" // Genius -- Added
+				],
 				"settings": {
 					"foreground": "#000090", // Scite Style 4
 					"fontStyle": "bold"
@@ -104,6 +107,7 @@
 					"constant.language.autoit", // Logan
 					"keyword.operator.logical.autoit", // Logan
 					"keyword.control.au3", // Genius
+					"keyword.operator.logical.au3", // Genius -- Added
 					// Keyword: Func, Const, Enum
 					"storage.type.autoit", // Logan
 					"storage.type.function.au3", // Genius
