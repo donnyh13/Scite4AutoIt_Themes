@@ -4,8 +4,9 @@
 	"colors": {
 		"editor.background": "#141414", // Scite Style 32 Back
 		"editor.foreground": "#D0D0D0", //? Scite Style 32 Fore -- no Fore value, adding one.
-		"editor.selectionBackground": "#14141425", // Scite Selection Back (Highlight) + Alpha
-		"editor.selectionForeground": "#CF6A4C", // Scite Selection Fore (Text)
+		"editor.selectionBackground": "#cf6b4c65", // Scite Selection Fore (Highlight) + Alpha -- Increased to 65 Alpha from 25
+		// "editor.selectionBackground": "#14141425", // Scite Selection Back (Highlight) + Alpha
+		// "editor.selectionForeground": "#CF6A4C", // Scite Selection Fore (Text)
 		"editor.wordHighlightBackground": "#00D04050", //? Scite Selection (highlight.current.word from Scite Global defaults) (Highlight Similar to Current Word), with added 50 Transparency
 		"editor.selectionHighlightBackground": "#00D04050", //? Scite Selection (highlight.current.word from Scite Global defaults) (Highlight Similar Word), with added 50 Transparency
 		"editor.lineHighlightBackground": "#F8F8F805", // Scite Caret Line Back

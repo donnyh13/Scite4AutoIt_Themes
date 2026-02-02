@@ -1,23 +1,19 @@
 {
   "name": "scite4autoit-color-theme",
   "displayName": "Scite4AutoIt-Themes",
-  "description": "Add themes similar to those available in Scite4AutoIt.",
+  "description": "Adds themes similar to those available in Scite4AutoIt.",
   "version": "0.0.1",
   "publisher": "donnyh13",
+  "license":"MIT",
   "engines": {
     "vscode": "^1.54.0"
   },
   "categories": [
     "Themes"
   ],
-  "icon": "logo.png",
+  "icon": "Scite-Themes.png",
   "contributes": {
     "themes": [
-      {
-        "label": "Scite4AutoIt_Dark",
-        "uiTheme": "vs-dark",
-        "path": "./themes/Scite4AutoIt_Dark-color-theme.json"
-      },
       {
         "label": "Scite4AutoIt_Standard",
         "uiTheme": "vs",
@@ -27,11 +23,6 @@
         "label": "Scite4AutoIt_Old_Standard",
         "uiTheme": "vs",
         "path": "./themes/Scite4AutoIt_Old_Standard-color-theme.json"
-      },
-      {
-        "label": "Scite4AutoIt_Monokai",
-        "uiTheme": "vs-dark",
-        "path": "./themes/Scite4AutoIt_Monokai-color-theme.json"
       },
       {
         "label": "Scite4AutoIt_MSDEV",
@@ -49,9 +40,19 @@
         "path": "./themes/Scite4AutoIt_Old_LCD-color-theme.json"
       },
       {
+        "label": "Scite4AutoIt_Monokai",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Scite4AutoIt_Monokai-color-theme.json"
+      },
+      {
         "label": "Scite4AutoIt_Twilight",
         "uiTheme": "vs-dark",
         "path": "./themes/Scite4AutoIt_Twilight-color-theme.json"
+      },
+      {
+        "label": "Scite4AutoIt_Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Scite4AutoIt_Dark-color-theme.json"
       }
     ]
   }
