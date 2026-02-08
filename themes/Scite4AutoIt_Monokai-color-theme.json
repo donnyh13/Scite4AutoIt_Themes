@@ -268,7 +268,7 @@
             "name": "COM Objects",
             "scope": [ 
                 "support.class.com.autoit", // Logan
-                "support.type.property-name" // Genius
+                "support.type.property-name.au3" // Genius
         ],
             "settings": {
                 "foreground": "#FD971F" // Scite Style 14
