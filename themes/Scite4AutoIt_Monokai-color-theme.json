@@ -140,6 +140,7 @@
             "name": "Numbers",
             "scope": [
                 "constant.numeric.autoit", // Logan
+                "constant.numeric.au3", // Genius
                 "constant.numeric.scientific_notation.au3", // Genius
                 "constant.numeric.hex.au3", // Genius
                 "constant.numeric.double.au3", // Genius
@@ -196,9 +197,16 @@
             "scope": [
                 "string.parameter.import.autoit", // Logan
                 "string.quoted.double.autoit", // Logan
+                "string.quoted.single.autoit", // Logan
+                "punctuation.definition.string.begin.autoit", // Logan
+                "punctuation.definition.string.end.autoit", // Logan
+                "punctuation.definition.string.begin.import.autoit", // Logan
+                "punctuation.definition.string.end.import.autoit", // Logan
+                "constant.character.escape.autoit", // Logan
                 "string.quoted.double.au3", // Genius
                 "string.quoted.pragma.value.au3", // Genius
-                "string.other.include.au3" // Genius
+                "string.other.include.au3", // Genius
+                "constant.character.escape.quoted.double.au3" // Genius
             ],
             "settings": {
                 "foreground": "#E6DB74" // Scite Style 7
@@ -212,7 +220,9 @@
                 "keyword.operator.comparison.autoit", // Logan
                 "punctuation.bracket.autoit", // Logan
                 "punctuation.commadot.autoit", // Logan
-                "keyword.operator.au3" // Genius
+                "keyword.control.underscore.autoit", // Logan
+                "keyword.operator.au3", // Genius
+                "keyword.control.underscore.au3" // Genius
             ],
             "settings": {
                 "foreground": "#F92672" // Scite Style 8
@@ -222,6 +232,7 @@
             "name": "User Variables",
             "scope": [
                 "variable.other.autoit", // Logan
+                "punctuation.definition.variable.autoit", // Logan
                 "variable.other.au3" // Genius
             ],
             "settings": {
