@@ -187,6 +187,7 @@
 					"keyword.operator.assignment.autoit", // Logan
 					"keyword.operator.arithmetic.autoit", // Logan
 					"keyword.operator.comparison.autoit", // Logan
+					"keyword.operator.concatenation.autoit", // Logan
 					"punctuation.bracket.autoit", // Logan
 					"punctuation.commadot.autoit", // Logan
 					"keyword.control.underscore.autoit", // Logan
@@ -211,6 +212,19 @@
 			{
 				"name": "Send Keys",
 				"scope": [
+					"constant.other.send-key.literal.autoit", // Logan
+					"constant.other.send-key.asc.autoit", // Logan
+					"constant.other.send-key.function.autoit", // Logan
+					"constant.other.send-key.modifier.autoit", // Logan
+					"constant.other.send-key.modifier.autoit", // Logan
+					"constant.other.send-key.browser.autoit", // Logan
+					"constant.other.send-key.media.autoit", // Logan
+					"constant.other.send-key.launch.autoit", // Logan
+					"constant.other.send-key.navigation.autoit", // Logan
+					"constant.other.send-key.numpad.autoit", // Logan
+					"constant.other.send-key.special.autoit", // Logan
+					"constant.other.send-key.editing.autoit", // Logan
+					"constant.other.send-key.system.autoit", // Logan
 					"constant.other.send-key.autoit" // Logan
 				],
 				"settings": {
@@ -264,7 +278,9 @@
 			{
 				"name": "Functions - File/User UDF's",
 				"scope": [
-					"entity.name.function.autoit", // Logan
+					"entity.name.function.autoit", // Logan -- Pre 1.4
+					"variable.function.autoit", // Logan 1.4+
+					"entity.name.function.definition.autoit", // Logan 1.4+ (Func Declaration)
 					"entity.name.function.au3" // Genius
 				],
 				"settings": {
