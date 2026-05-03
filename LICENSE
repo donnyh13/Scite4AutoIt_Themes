@@ -19,3 +19,22 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+---
+
+THIRD-PARTY ATTRIBUTIONS
+
+1. Visual Studio Code Default Themes (Dark, Light, Monokai)
+   Copyright (c) Microsoft Corporation
+   License: MIT (https://github.com/microsoft/vscode/blob/main/LICENSE.txt)
+   
+   The fallback UI and base color tokens are derived from the built-in 
+   themes provided by Visual Studio Code.
+
+2. SciTE4AutoIt3 Color Schemes
+   Copyright (c) The AutoIt Team & Jos van der Zande
+   (https://www.autoitscript.com/site/autoit-script-editor/)
+   Also any other contributors to the themes, including but not limited to: Jon, Valik, and mLipok.
+   
+   The AutoIt-specific color palettes and syntax highlighting styles 
+   are mirrored from the original SciTE4AutoIt3 editor configurations.
