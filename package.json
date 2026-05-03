@@ -5,13 +5,18 @@
   "version": "0.0.1",
   "publisher": "donnyh13",
   "license":"MIT",
+  "icon": "Scite-Themes.png",
   "engines": {
     "vscode": "^1.54.0"
   },
   "categories": [
     "Themes"
   ],
-  "icon": "Scite-Themes.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/donnyh13/Scite4AutoIt_Themes.git"
+  },
+  "homepage": "https://github.com/donnyh13/Scite4AutoIt_Themes/blob/master/README.md",
   "contributes": {
     "themes": [
       {
