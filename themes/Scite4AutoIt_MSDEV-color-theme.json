@@ -46,6 +46,7 @@
 				"name": "White Space / Preprocessor directives",
 				"scope": [
 					"string.parameter.directives.autoit", // Logan
+					"meta.function.autoit", // Logan 1.4+ (non-tokenized characters in Function declaration)
 					"support.function.pragma.au3", // Genius
 					"keyword.control.pragma.key.au3", // Genius
 					"string.unquoted.pragma.value.au3" // Genius
@@ -173,6 +174,7 @@
 				"name": "User Variables",
 				"scope": [
 					"variable.other.autoit", // Logan
+					"variable.parameter.autoit", // Logan 1.5 + (Variables declared in Functions.)
 					"punctuation.definition.variable.autoit", // Logan
 					"variable.other.au3" // Genius
 				],
@@ -186,7 +188,6 @@
 					"constant.other.send-key.literal.autoit", // Logan
 					"constant.other.send-key.asc.autoit", // Logan
 					"constant.other.send-key.function.autoit", // Logan
-					"constant.other.send-key.modifier.autoit", // Logan
 					"constant.other.send-key.modifier.autoit", // Logan
 					"constant.other.send-key.browser.autoit", // Logan
 					"constant.other.send-key.media.autoit", // Logan
