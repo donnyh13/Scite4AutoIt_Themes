@@ -4,6 +4,6 @@ All notable changes to the "autoit-theme" extension will be documented in this f
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
-## [Unreleased]
+## [0.0.1] - 2026-05-11
 
 - Initial release
