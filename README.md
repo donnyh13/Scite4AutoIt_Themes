@@ -70,3 +70,37 @@ Being under the above limitations myself, I have found the following workaround.
 8. Close VS Code if open, and open an AutoIt Script in VS Code to make sure everything is colorized properly, and that no errors are present.
 
 * Fun fact, as of Logan's version 1.5.0, the source files can be still successfully compiled with the latest compatible webpack and babel loader packages installed. With minimal testing, the extension is fully functional with all new features.
+
+## Previews
+
+### Standard
+
+![Standard](img/Previews/Standard.png)
+
+### Old-Standard
+
+![Old-Standard](img/Previews/Old%20Standard.png)
+
+### Old-LCD
+
+![Old-LCD](img/Previews/Old%20LCD.png)
+
+### MSDEV
+
+![MSDEV](img/Previews/MSDEV.png)
+
+### MSDEV2
+
+![MSDEV2](img/Previews/MSDEV2.png)
+
+### Dark
+
+![Dark](img/Previews/Dark.png)
+
+### Monokai
+
+![Monokai](img/Previews/Monokai.png)
+
+### Twilight
+
+![Twilight](img/Previews/Twilight.png)
