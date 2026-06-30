@@ -13,14 +13,14 @@
 		"editorGutter.background": "#202020", // Scite Style 33 Back
 		"editorLineNumber.foreground": "#afafaf", // Customized dimmed Style 33 Fore?
 		"editorLineNumber.activeForeground": "#DADADA", // Scite Style 33 Fore
-		"editorIndentGuide.background": "#DADADA", // Scite Style 37 Fore
+		"editorIndentGuide.background1": "#FFFFFF", // Scite Style 37 Back from Scite Global defaults
 		// "editorBracketHighlight.foreground1": "#00F0F0", // Scite Style 34 Fore
 		// "editorBracketHighlight.unexpectedBracket.foreground": "#00FF80", // Scite Style 35 Fore
 		"editorHoverWidget.background": "#202020", // Scite Style 38 Back (Call Tips)
 		"editorHoverWidget.foreground": "#DADADA", // Scite Style 38 Fore (Call Tips)
 		"editorHoverWidget.highlightForeground": "#e7db74", // Scite Style Calltips Color Highlight (Call Tips)
 		"editor.inactiveSelectionBackground": "#3A3D41",
-		"editorIndentGuide.activeBackground": "#707070",
+		"editorIndentGuide.activeBackground1": "#FF0000", // fold.highlight.colour from Scite Global defaults
 		"list.dropBackground": "#383B3D",
 		"activityBarBadge.background": "#007ACC",
 		"sideBarTitle.foreground": "#BBBBBB",

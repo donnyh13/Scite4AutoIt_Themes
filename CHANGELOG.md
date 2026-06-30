@@ -9,6 +9,12 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ### Added
 
 - Ternary tokens.
+- Alternate Monokai and Twilight themes.
+- Added new previews
+
+### Changed
+
+- Indent/fold guide coloration for better visibility.
 
 ## [0.0.1] - 2026-05-11
 

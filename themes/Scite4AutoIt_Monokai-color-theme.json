@@ -5,8 +5,6 @@
 		"editor.background": "#272822", // Scite Style 32 Back
 		"editor.foreground": "#D0D0D0", //? Scite Style 32 Fore -- no Fore value, adding one.
 		"editor.selectionBackground": "#cf6b4c65", // Scite Selection Fore (Highlight) + Alpha -- Increased to 65 Alpha from 25
-		// "editor.selectionBackground": "#27282225", // Scite Selection Back (Highlight) + Alpha
-		// "editor.selectionForeground": "#CF6A4C", // Scite Selection Fore (Text)
 		"editor.wordHighlightBackground": "#00D04050", //? Scite Selection (highlight.current.word from Scite Global defaults) (Highlight Similar to Current Word), with added 50 Transparency
 		"editor.selectionHighlightBackground": "#00D04050", //? Scite Selection (highlight.current.word from Scite Global defaults) (Highlight Similar Word), with added 50 Transparency
 		"editor.lineHighlightBackground": "#FFFF0005", // Scite Caret Line Back + Alpha
@@ -14,13 +12,13 @@
 		"editorGutter.background": "#C0C0C0", //? Scite Style 33 Back from Scite Global defaults
 		"editorLineNumber.foreground": "#444444", //? Customized dimmed Style 33 Fore? -- Not set, but using for readability.
 		"editorLineNumber.activeForeground": "#000000", //? Scite Style 33 Fore -- Not set, but using for readability.
-		"editorIndentGuide.background": "#C0C0C0", //? Scite Style 37 Fore from Scite Global defaults
+		"editorIndentGuide.background1": "#AE81FF", //? (Custom choice)
 		// "editorBracketHighlight.foreground1": "#0000FF", // Scite Style 34 Fore
 		// "editorBracketHighlight.unexpectedBracket.foreground": "#009933", // Scite Style 35 Fore
 		"editorHoverWidget.background": "#414339", //? Scite Style 38 Back (Call Tips) -- Not set, so Adding custom values.
 		"editorHoverWidget.foreground": "#F8f8f2", //? Scite Style 38 Fore (Call Tips) -- Not set, so Adding custom values.
 		"editorHoverWidget.highlightForeground": "#C4265E", //? Scite Style Calltips Color Highlight (Call Tips) -- Not set, so Adding custom values.
-		"editorIndentGuide.activeBackground": "#707070",
+		"editorIndentGuide.activeBackground1": "#FF0000", // fold.highlight.colour from Scite Global defaults
         "dropdown.background":"#414339",
 		"list.activeSelectionBackground":"#75715E",
 		"quickInputList.focusBackground":"#414339",

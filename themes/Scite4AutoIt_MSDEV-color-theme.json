@@ -13,14 +13,14 @@
 		"editorGutter.background": "#C0C0C0", //? Scite Style 33 Back from Scite Global defaults
 		"editorLineNumber.foreground": "#444444", //? Customized dimmed Style 33 Fore? -- Not set, but using for readability.
 		"editorLineNumber.activeForeground": "#000000", //? Scite Style 33 Fore -- Not set, but using for readability.
-		"editorIndentGuide.background": "#C0C0C0", //? Scite Style 37 Fore from Scite Global defaults
+		"editorIndentGuide.background1": "#444444", //? (Custom choice)
 		// "editorBracketHighlight.foreground1": "#0000FF", // Scite Style 34 Fore
 		// "editorBracketHighlight.unexpectedBracket.foreground": "#009933", // Scite Style 35 Fore
 		"editorHoverWidget.background": "#FFFFFF", //? Scite Style 38 Back (Call Tips) -- Not set, so Adding custom values.
 		"editorHoverWidget.foreground": "#050505", //? Scite Style 38 Fore (Call Tips) -- Not set, so Adding custom values.
 		"editorHoverWidget.highlightForeground": "#FF0000", //? Scite Style Calltips Color Highlight (Call Tips) -- Not set, so Adding custom values.
 		"editor.inactiveSelectionBackground": "#E5EBF1",
-		"editorIndentGuide.activeBackground": "#939393",
+		"editorIndentGuide.activeBackground1": "#FF0000", // fold.highlight.colour from Scite Global defaults
 		"editorSuggestWidget.background": "#F3F3F3",
 		"activityBarBadge.background": "#007ACC",
 		"sideBarTitle.foreground": "#6F6F6F",
