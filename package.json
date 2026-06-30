@@ -50,9 +50,19 @@
         "path": "./themes/Scite4AutoIt_Monokai-color-theme.json"
       },
       {
+        "label": "Scite4AutoIt_Monokai-alt",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Scite4AutoIt_Monokai-alt-color-theme.json"
+      },
+      {
         "label": "Scite4AutoIt_Twilight",
         "uiTheme": "vs-dark",
         "path": "./themes/Scite4AutoIt_Twilight-color-theme.json"
+      },
+      {
+        "label": "Scite4AutoIt_Twilight-alt",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Scite4AutoIt_Twilight-alt-color-theme.json"
       },
       {
         "label": "Scite4AutoIt_Dark",

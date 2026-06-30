@@ -19,16 +19,18 @@ All Scite Themes, colorings and names are owned by the developers of Scite4AutoI
 
 ## Included in this Theme set
 
-| Theme Name                    | Base VS Code Theme | Comment                                                   |
-| ----------------------------- |  ----------------- | --------------------------------------------------------- |
-| **Scite4AutoIt_Standard**     | *VS Code Light*    | Standard SciTE4AutoIt3 Color scheme                       |
-| **Scite4AutoIt_Old_Standard** | *VS Code Light*    | Old Standard SciTE4AutoIt3 Color scheme                   |
-| **Scite4AutoIt_MSDEV**        | *VS Code Light*    | Jon's Standard MSDEV Color scheme                         |
-| **Scite4AutoIt_MSDEV2**       | *VS Code Light*    | Valiks' "Close to" MSDEV Color scheme                     |
-| **Scite4AutoIt_Old_LCD**      | *VS Code Light*    | mLipok's Font & Color scheme for low contrast LCD Display |
-| **Scite4AutoIt_Monokai**      | *VS Code Monokai*  | Monokai Color scheme                                      |
-| **Scite4AutoIt_Twilight**     | *VS Code Dark*     | Twilight Color scheme                                     |
-| **Scite4AutoIt_Dark**         | *VS Code Dark*     | Dark SciTE4AutoIt3 Color scheme                           |
+| Theme Name                    | Base VS Code Theme | Comment                                                       |
+| ----------------------------- |  ----------------- | ---------------------------------------------------------     |
+| **Scite4AutoIt_Standard**     | *VS Code Light*    | Standard SciTE4AutoIt3 Color scheme                           |
+| **Scite4AutoIt_Old_Standard** | *VS Code Light*    | Old Standard SciTE4AutoIt3 Color scheme                       |
+| **Scite4AutoIt_MSDEV**        | *VS Code Light*    | Jon's Standard MSDEV Color scheme                             |
+| **Scite4AutoIt_MSDEV2**       | *VS Code Light*    | Valiks' "Close to" MSDEV Color scheme                         |
+| **Scite4AutoIt_Old_LCD**      | *VS Code Light*    | mLipok's Font & Color scheme for low contrast LCD Display     |
+| **Scite4AutoIt_Monokai**      | *VS Code Monokai*  | Monokai Color scheme                                          |
+| **Scite4AutoIt_Monokai-alt**  | *VS Code Monokai*  | Monokai Alternate Color scheme, minor alterations from Scite  |
+| **Scite4AutoIt_Twilight**     | *VS Code Dark*     | Twilight Color scheme                                         |
+| **Scite4AutoIt_Twilight-alt** | *VS Code Dark*     | Twilight Alternate Color scheme, minor alterations from Scite |
+| **Scite4AutoIt_Dark**         | *VS Code Dark*     | Dark SciTE4AutoIt3 Color scheme                               |
 
 ## Note
 
@@ -79,11 +81,11 @@ Being under the above limitations myself, I have found the following workaround.
 
 ### Old-Standard
 
-![Old-Standard](img/Previews/Old%20Standard.png)
+![Old-Standard](img/Previews/Old-Standard.png)
 
 ### Old-LCD
 
-![Old-LCD](img/Previews/Old%20LCD.png)
+![Old-LCD](img/Previews/Old-LCD.png)
 
 ### MSDEV
 
@@ -101,6 +103,14 @@ Being under the above limitations myself, I have found the following workaround.
 
 ![Monokai](img/Previews/Monokai.png)
 
+### Monokai-alt
+
+![Monokai-alt](img/Previews/Monokai-alt.png)
+
 ### Twilight
 
 ![Twilight](img/Previews/Twilight.png)
+
+### Twilight-alt
+
+![Twilight-alt](img/Previews/Twilight-alt.png)
