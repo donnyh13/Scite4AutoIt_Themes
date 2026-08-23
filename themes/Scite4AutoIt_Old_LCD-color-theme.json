@@ -144,7 +144,7 @@
 				"scope": [
 					"string.parameter.import.autoit", // Logan
 					"string.quoted.double.autoit", // Logan // Sean
-					"string.quoted.single.autoit", // Logan
+					"string.quoted.single.autoit", // Logan // Sean
 					"punctuation.definition.string.begin.autoit", // Logan
 					"punctuation.definition.string.end.autoit", // Logan
 					"punctuation.definition.string.begin.import.autoit", // Logan
