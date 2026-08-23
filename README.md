@@ -6,12 +6,13 @@ These themes have been made to specifically work with either, or both of the fol
 
 * [AutoIt by Genius](https://marketplace.visualstudio.com/items?itemName=genius257.autoit)
 * [AutoIt-VSCode by Logan](https://marketplace.visualstudio.com/items?itemName=damien.autoit)
+* [AutoIt-lsp by Sean Griffin](https://github.com/seanhaydongriffin/autoit-cdp-udf/tree/main)
 
 ## Intro
 
 These themes are an attempt to copy the themes that come with Scite4AutoIt. Being that there are many further customizations available for VS Code compared to Scite, many colorations in VS Code may not match, and these may not be as well combined as they are in Scite, as VS Code colorizes things slightly different from Scite in some instances.
 
-Because of the vast number of available settings and tokens for each language, it has been thought best to only have these custom themes apply to AutoIt files. I have used the token names from the two leading AutoIt extensions that are currently available, published by LoganCH and Genius257. When the user opens any other language file, the theme coloring will revert to the base theme's colorization for tokens, but not for the editor colors.
+Because of the vast number of available settings and tokens for each language, it has been thought best to only have these custom themes apply to AutoIt files. I have used the token names from the three VSCode AutoIt extensions that are currently available and updated, published by LoganCH, Genius257 and Sean Griffin. When the user opens any other language file, the theme coloring will revert to the base theme's colorization for tokens, but not for the editor colors.
 
 The base themes are three themes included with VS Code, VS Code Light, VS Code Dark, and Monokai, which are all MIT licensed, and belong to the respective owner(s). Copyright (c) Microsoft Corporation.
 

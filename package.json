@@ -2,7 +2,7 @@
   "name": "scite4autoit-color-theme",
   "displayName": "Scite4AutoIt-Themes",
   "description": "Adds themes similar to those available in Scite4AutoIt.",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "publisher": "donnyh13",
   "license":"MIT",
   "icon": "Scite-Themes.png",
