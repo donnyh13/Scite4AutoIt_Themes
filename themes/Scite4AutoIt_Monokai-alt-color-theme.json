@@ -1,18 +1,19 @@
 {
-	"name": "Scite4AutoIt_Monokai",
+	"name": "Scite4AutoIt_Monokai-alt",
 	"type":"dark",
 	"colors": {
 		"editor.background": "#272822", // Scite Style 32 Back
 		"editor.foreground": "#D0D0D0", //? Scite Style 32 Fore -- no Fore value, adding one.
 		"editor.selectionBackground": "#cf6b4c65", // Scite Selection Fore (Highlight) + Alpha -- Increased to 65 Alpha from 25
+		// "editor.selectionForeground": "#CF6A4C", // Scite Selection Fore (Text)
 		"editor.wordHighlightBackground": "#00D04050", //? Scite Selection (highlight.current.word from Scite Global defaults) (Highlight Similar to Current Word), with added 50 Transparency
 		"editor.selectionHighlightBackground": "#00D04050", //? Scite Selection (highlight.current.word from Scite Global defaults) (Highlight Similar Word), with added 50 Transparency
 		"editor.lineHighlightBackground": "#FFFF0005", // Scite Caret Line Back + Alpha
 		// "editorCursor.foreground": "#000000", // ?? Scite Caret Fore
-		"editorGutter.background": "#C0C0C0", //? Scite Style 33 Back from Scite Global defaults
-		"editorLineNumber.foreground": "#444444", //? Customized dimmed Style 33 Fore? -- Not set, but using for readability.
-		"editorLineNumber.activeForeground": "#000000", //? Scite Style 33 Fore -- Not set, but using for readability.
-		"editorIndentGuide.background1": "#AE81FF", //? (Custom choice)
+		"editorGutter.background": "#272822", //? Scite Style 32 Back (Custom choice)
+		"editorLineNumber.foreground": "#a1a1a1", //? Customized dimmed Style 33 Fore? -- Not set, but using for readability.
+		"editorLineNumber.activeForeground": "#e6e6e6", //? Scite Style 33 Fore -- Not set, but using for readability.
+		"editorIndentGuide.background1": "#80800080", //? (Custom choice)
 		// "editorBracketHighlight.foreground1": "#0000FF", // Scite Style 34 Fore
 		// "editorBracketHighlight.unexpectedBracket.foreground": "#009933", // Scite Style 35 Fore
 		"editorHoverWidget.background": "#414339", //? Scite Style 38 Back (Call Tips) -- Not set, so Adding custom values.

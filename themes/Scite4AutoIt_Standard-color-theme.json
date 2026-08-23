@@ -13,14 +13,14 @@
 		"editorGutter.background": "#C0C0C0", // Scite Style 33 Back
 		"editorLineNumber.foreground": "#4b4b4b", // Customized dimmed Style 33 Fore?
 		"editorLineNumber.activeForeground": "#000000", // Scite Style 33 Fore
-		"editorIndentGuide.background": "#C0C0C0", // Scite Style 37 Fore
+		"editorIndentGuide.background1": "#C0C0C0", // Scite Style 37 Fore
 		// "editorBracketHighlight.foreground1": "#0000FF", // Scite Style 34 Fore
 		// "editorBracketHighlight.unexpectedBracket.foreground": "#008000", // Scite Style 35 Fore
 		"editorHoverWidget.background": "#FFFFFF", // Scite Style 38 Back (Call Tips)
 		"editorHoverWidget.foreground": "#050505", // Scite Style 38 Fore (Call Tips)
 		"editorHoverWidget.highlightForeground": "#FF0000", // Scite Style Calltips Color Highlight (Call Tips)
 		"editor.inactiveSelectionBackground": "#E5EBF1",
-		"editorIndentGuide.activeBackground": "#939393",
+		"editorIndentGuide.activeBackground1": "#FF0000", // fold.highlight.colour from Scite Global defaults
 		"editorSuggestWidget.background": "#F3F3F3",
 		"activityBarBadge.background": "#007ACC",
 		"sideBarTitle.foreground": "#6F6F6F",
@@ -60,6 +60,7 @@
 				"scope": [
 					"comment.line.semicolon.autoit", // Logan
 					"comment.line.au3", // Genius
+					"comment.line.autoit" // Sean
 				],
 				"settings": {
 					"foreground": "#008000", // Scite Style 1 
@@ -69,7 +70,7 @@
 			{
 				"name": "Block Comments",
 				"scope": [
-					"comment.block.autoit", // Logan
+					"comment.block.autoit", // Logan // Sean
 					"comment.block.au3" // Genius
 				],
 				"settings": {
@@ -80,7 +81,7 @@
 			{
 				"name": "Numbers",
 				"scope": [
-					"constant.numeric.autoit", // Logan
+					"constant.numeric.autoit", // Logan // Sean
 					"constant.numeric.au3", // Genius
 					"constant.numeric.scientific_notation.au3", // Genius
 					"constant.numeric.hex.au3", // Genius
@@ -94,7 +95,7 @@
 			{
 				"name": "Functions - BuiltIn",
 				"scope": [
-					"support.function.autoit", // Logan
+					"support.function.autoit", // Logan // Sean (All Functions, User and other.)
 					"support.function.au3" // Genius -- Added
 				],
 				"settings": {
@@ -104,7 +105,7 @@
 			{
 				"name": "Keyword: True/False, Null/Default, And/Or/Not",
 				"scope": [
-					"constant.language.autoit", // Logan
+					"constant.language.autoit", // Logan // Sean
 					"keyword.operator.logical.autoit", // Logan
 					"keyword.control.au3", // Genius
 					"keyword.operator.logical.au3", // Genius -- Added
@@ -116,7 +117,7 @@
 					"storage.modifier.autoit", // Logan
 					"storage.modifier.au3", // Genius
 					// Keyword: Conditional Statements etc.
-					"keyword.control.autoit", // Logan
+					"keyword.control.autoit", // Logan // Sean
 					"keyword.control.au3" //Genius
 				],
 				"settings": {
@@ -162,7 +163,8 @@
 				"name": "AutoIt Macros",
 				"scope": [
 					"constant.other.autoit", // Logan
-					"variable.other.constant.au3" // Genius
+					"variable.other.constant.au3", // Genius
+					"variable.other.macro.autoit" // Sean
 				],
 				"settings": {
 					"foreground": "#808000" // Scite Style 6
@@ -172,7 +174,7 @@
 				"name": "Includes and Strings",
 				"scope": [
 					"string.parameter.import.autoit", // Logan
-					"string.quoted.double.autoit", // Logan
+					"string.quoted.double.autoit", // Logan // Sean
 					"string.quoted.single.autoit", // Logan
 					"punctuation.definition.string.begin.autoit", // Logan
 					"punctuation.definition.string.end.autoit", // Logan
@@ -198,8 +200,12 @@
 					"punctuation.bracket.autoit", // Logan
 					"punctuation.commadot.autoit", // Logan
 					"keyword.control.underscore.autoit", // Logan
+					"keyword.operator.conditional.colon.autoit", // Logan Ternary
+					"keyword.operator.conditional.question-mark.autoit", // Logan Ternary
 					"keyword.operator.au3", // Genius
-					"keyword.control.underscore.au3" // Genius
+					"keyword.control.underscore.au3", // Genius
+					"keyword.operator.conditional.au3", // Genius 1.8.10 Ternary.
+					"keyword.operator.autoit" // Sean
 				],
 				"settings": {
 					"foreground": "#FF8000" // Scite Style 8
@@ -208,7 +214,7 @@
 			{
 				"name": "User Variables",
 				"scope": [
-					"variable.other.autoit", // Logan
+					"variable.other.autoit", // Logan //Sean
 					"variable.parameter.autoit", // Logan 1.5 + (Variables declared in Functions.)
 					"punctuation.definition.variable.autoit", // Logan
 					"variable.other.au3" // Genius
@@ -259,7 +265,8 @@
 				"scope": [
 					"meta.preprocessor.autoit", // Logan
 					"meta.preprocessor.au3", // Genius
-					"keyword.control.pragma.au3" // Genius
+					"keyword.control.pragma.au3", // Genius
+					"meta.preprocessor.autoit" // Sean, Include, Include-Once, Region/EndRegion and Pragma
 				 ],
 				"settings": {
 					"foreground": "#DC143C" // Scite Style 12
@@ -269,7 +276,8 @@
 				"name": "COM Objects",
 				"scope": [ 
 					"support.class.com.autoit", // Logan
-					"support.type.property-name.au3" // Genius
+					"support.type.property-name.au3", // Genius
+					"support.function.method.autoit" // Sean
 			],
 				"settings": {
 					"foreground": "#993399" // Scite Style 14
